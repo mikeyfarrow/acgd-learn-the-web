@@ -1,5 +1,8 @@
 # Note from mikeyfarrow
 
+Cloned from: https://github.com/acgd-learn-the-web/www
+View the website: https://learn-the-web.algonquindesign.ca/
+
 The static site has been generated already. See ``_site/`` directory.
 
 To build:

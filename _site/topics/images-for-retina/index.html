@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  
+<meta charset="utf-8">
+<title>Images for retina screens · Web Dev Topics · Learn the Web</title>
+<meta name="description" content="How to properly set up images for retina screens.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="/fonts/alegreyasans-regular.woff" rel="preload" as="font">
+<link href="/fonts/alegreyasans-italic.woff" rel="preload" as="font">
+<link href="/fonts/alegreyasans-bold.woff" rel="preload" as="font">
+<link href="/fonts/sourcecodepro-regular.woff" rel="preload" as="font">
+<link href="/fonts/sourcecodepro-bold.woff" rel="preload" as="font">
+<link href="/css/main.min.css?v=92" rel="stylesheet">
+<meta name="application-name" content="Learn the Web">
+<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+<meta name="msapplication-TileImage" content="/favicon-144.png">
+<meta name="msapplication-TileColor" content="#00deae">
+<link rel="profile" href="http://osprotocol.com">
+<meta property="os:repo" content="https://github.com/acgd-learn-the-web">
+<meta property="os:rcs_type" content="git">
+<meta property="os:src" content="git@github.com:acgd-learn-the-web/topics.git">
+<meta property="os:issue" content="https://github.com/acgd-learn-the-web/topics/issues">
+
+  
+  <link href="/css/main-article.min.css?v=92" rel="stylesheet">
+  
+  
+</head>
+<body >
+
+  <svg hidden>
+  <symbol id="icon-nav" viewBox="0 0 256 256">
+    <path d="M8.5 27h239v35.7H8.5V27zm0 83.6h239v35.8H8.5v-35.8zm0 83.6h239V230H8.5v-35.8z"/>
+  </symbol>
+  <symbol id="icon-activities" viewBox="0 0 256 256">
+    <path d="M128 10.3A117.7 117.7 0 1 0 245.7 128 117.7 117.7 0 0 0 128 10.3zm0 210.2a92.5 92.5 0 1 1 92.5-92.5 92.5 92.5 0 0 1-92.5 92.5z"/>
+    <path d="M178.3 75a79.6 79.6 0 0 0-11.2 1.2q-7 1.2-10 3.7t-7 6q-4 4.2-13 17.3a290.3 290.3 0 0 0-16.3 26.3Q113 143 108 154a39.5 39.5 0 0 0-10-10q-5.4-4-10-4t-10 4q-5.7 4-5.7 9.5 0 3.7 5 9A135.2 135.2 0 0 1 90 179a69.5 69.5 0 0 0 5.3 7.7 9.6 9.6 0 0 0 2.7 1.6q1.7.8 8 .8 7.7 0 10.3-1a12 12 0 0 0 3.7-3q1.2-2 5.5-12.2a281.7 281.7 0 0 1 24.3-46.6q15.3-24 29.5-37a29.6 29.6 0 0 0 4-4.3 6 6 0 0 0 .8-3.3 5.4 5.4 0 0 0-1-4 5.7 5.7 0 0 0-4-1.6z"/>
+  </symbol>
+  <symbol id="icon-courses" viewBox="0 0 256 256">
+    <circle cx="44.4" cy="40.4" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 40.4H229" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44.4" cy="128" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 128H229" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44.4" cy="215.6" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 215.6H229" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-left" viewBox="0 0 50 100">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M41.7 82.6L8.3 49.3l32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-right" viewBox="0 0 50 100">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M8.3 82.6l33.4-33.3-32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-down" viewBox="0 0 100 50">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M17.4 8.3l33.3 33.4 32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-play" viewBox="0 0 256 190">
+    <path d="M249.5 45.4s-2.4-17-10-24.6c-9.3-10-20-10-24.7-10.5C180 7.8 128 7.8 128 7.8s-52.2 0-87 2.5c-4.7.6-15.3.6-24.7 10.5-7.4 7.5-10 24.6-10 24.6S4 65.4 4 85.6v18.8c0 20 2.5 40 2.5 40s2.4 17.2 10 24.7c9.3 10 21.7 9.8 27.2 10.8 19.8 2 84.3 2.5 84.3 2.5s52 0 86.8-2.6c4.8-.6 15.4-.6 24.8-10.5 7.4-7.4 10-24.5 10-24.5s2.4-20 2.4-40v-19c0-20-2.5-40-2.5-40zm-147 81.8V57.5l67 35-67 34.7z"/>
+  </symbol>
+  <symbol id="icon-download" viewBox="0 0 256 256">
+    <path d="M234.3 1H21.7C10.3 1 1 10.3 1 21.7v212.5c0 11.5 9.3 20.7 20.7 20.7h212.5c11.5 0 20.7-9.6 20.7-21V21.7C255 10.3 245.4 1 234 1zM128 220.7L48.4 123H88V48h79v75h40.6L128 220.7z"/>
+  </symbol>
+  <symbol id="icon-github" viewBox="0 0 256 256">
+    <path d="M213.7 117c2-8 2.5-17.2 2.5-27.3 0-16-6-28.7-15.7-38.4 1.7-5.5 4-17.6-2.3-33.2 0 0-11-3-36 14-9.6-2.3-20-3.5-30.4-3.5-11.4 0-23 1.5-33.7 4.4-25-17.5-37-14-37-14-7 18.3-2 32-1 35.3-8.3 9.6-14 21.5-14 36 0 10.5 1 19.8 4 28 0 .6 4.4 10 4.7 10.4l1.8 2.6c9.4 14 26 23 53.8 26-4.2 2.4-8.6 7.3-10.4 16-6 3-24.7 9.4-35.8-9.8 0 0-6.2-11.4-18.2-12.3 0 0-11.4-.3-.6 7 0 0 8.3 4 13.6 17.5 0 0 6 23.4 41 16v24s-1 8.7-9 11.5c0 0-5 3 0 5 0 0 21 2 21-16v-26.5s0-10.5 6-14V219s-.8 10.2-6 14.2c0 0-4 6.5 4 4.7 0 0 14.7-2 15.4-20v-43h3.3l.4 43.2c.5 17.5 15.5 19.4 15.5 19.4 8 1.8 4.5-4.7 4.5-4.7-5.3-4-5.5-14.5-5.5-14.5v-43c6 4 5 13.7 5 13.7V216c0 17.8 21.2 16 21.2 16 5-1.7.3-5 .3-5-8-2.8-8.5-11.3-8.5-11.3V181c0-13.5-6-20.6-11.4-24.4 31-3 46.7-12.8 54-28 .7-.5 4-10.8 4.4-11.6zm-82 33.6c-35.3 0-64-5.3-64-39.4 0-8.2 4-15.8 11-22 11.5-10.6 31-5 53-5s41.4-5.6 53 4.8c7 6.3 11 14 11 22.2 0 38.4-28.7 39.4-64 39.4z"/>
+    <path d="M97 94c-7 0-13 8.6-13 19 0 10.7 6 19.3 13.3 19.3s13.4-8.6 13.4-19.2c0-10-6-19-13.3-19zm71.5 0c-7.3 0-13.3 8.6-13.3 19 0 10.7 6 19.3 13.3 19.3 7.3 0 13.3-8.6 13.3-19.2 0-10-6-19-13.3-19z"/>
+  </symbol>
+  <symbol id="icon-bug" viewBox="0 0 256 256">
+    <path d="M47.6 84L31 67.5c-3-3-8-3-11.2 0-3 3.2-3 8.2 0 11.3l19 17.8c1.4 1.5 3.4 1 5.5 1h15.4c-11 14-18.2 30.4-20.8 47H12c-4.4 0-8 3.8-8 8.2 0 4.4 3.6 8.3 8 8.3h25.7c0 14 3.6 28 9.7 39h-5.7c-2 0-4 1-5.6 3l-18 19c-3 3-3 8 0 11.4 1.7 1.5 3.8 2.4 5.8 2.4s4-.8 5.6-2.3L45 216h12.8c15.6 19.4 40 32 64.8 33.3V84h-75zM244 144.6h-27.4c-3.4-16.5-12.2-33-22.5-46.8h18c2 0 4 .4 6-1l19-18.5c3-3 3-7.8 0-11-3-3-8-3-11 0L209 84h-75v165.3c25-1.6 49-16.6 64.4-33h13L228 233c1.4 1 3.5 2 5.5 2s4-1 5.8-2.8c3-3.2 3-8.2 0-11.3l-19-19.6c-1.4-1.5-3.4-2.7-5.5-2.7h-6c6-11 9.6-24.8 9.7-38.5h26c4.3 0 8-4 8-8.4s-3.8-8-8-8zM77 73h102c0-19.3-9.6-33.8-24-42.8l10.4-10c3-3.2 3-8 0-11.2-3-3-8-3-11.2 0l-15 15c-3.6-.7-7.4-1.2-11.3-1.2s-8 .5-12 1.3L101 9c-3-3-8-3-11 0-3 3.7-3 8.7 0 11.8l10.3 10c-13.7 8.4-23 23-23 42.2z"/>
+  </symbol>
+  <symbol id="icon-steps" viewBox="0 0 256 256">
+    <circle cx="41.8" cy="63.2" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 63.2H239" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="41.8" cy="128" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 128H239" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="41.8" cy="192.8" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 192.8H239" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-victory" viewBox="0 0 256 256">
+    <path fill="none" stroke-width="17" d="M95 164.8c6-12.5 13-26 21.2-41s17.5-29.8 28-44.6c10.3-14.8 18-24.6 22.6-29.5 4.8-4.8 8.8-8.7 12-11.5 3.4-2.8 9.2-5 17.6-6.2 8.4-1.3 14.7-2 19-2 3 0 5.3 1 7 2.6 2 1.8 2.8 4 2.8 7 0 2-.5 4-1.6 5.6-1 1.6-3.3 4-6.6 7-16 14.8-32.7 35.8-50 63-17.4 27.4-31.2 53.8-41.4 79.4-4.8 11.7-8 18.6-9.3 20.6-1.4 2-3.5 4-6.4 5.7-3 1.7-8.8 2.5-17.7 2.5-7 0-11.5-.4-13.4-1.3s-3.6-1.8-4.6-2.7c-1-1-4-5.2-9-12.7-5-8-12.6-17.2-22.3-28-5.5-6.2-8.3-11.4-8.3-15.5 0-6 3.2-11.3 9.6-15.8 6.4-4.5 12-6.7 17-6.7 5.3 0 11 2.2 17 6.5 6.3 4.4 11.8 10.2 16.7 17.5z" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-folder" viewBox="0 0 256 256">
+    <rect width="232" height="168" x="12" y="56" fill="#00675a" rx="12" ry="12"/>
+    <rect width="122" height="35" x="34" y="24" fill="#00675a" rx="24" ry="24"/>
+  </symbol>
+  <symbol id="icon-file" viewBox="0 0 256 256">
+    <path fill="#fff" d="M203.7 222.7h-153V30.3h96l57 47v145.4"/>
+    <path fill="#00675a" d="M47.6 240A13.3 13.3 0 0 1 34 226.4V29.6A13.3 13.3 0 0 1 47.6 16h110.8a7.3 7.3 0 0 1 2.8.6l1.4.6h.2l1.5 1 .4.2 1.3 1.2 51.8 51.8a14 14 0 0 1 4.4 10.3 7.2 7.2 0 0 1-.2 1.7v143a13.3 13.3 0 0 1-13.6 13.6zM194 212V96h-37.8A14.4 14.4 0 0 1 142 81.8V44H62v168z"/>
+  </symbol>
+  <symbol id="icon-help" viewBox="0 0 256 256">
+    <path d="M128 4a124 124 0 1 0 124 124A124 124 0 0 0 128 4zm3.6 206q-7.5 7.5-19.5 7.5-9.5 0-14.5-5t-5-14q0-12.8 7.5-20.5t19.7-7.7q9.5 0 14.4 5t5 14.2q0 12.8-7.3 20.4zM180 97.5a36.2 36.2 0 0 1-7 11 82.4 82.4 0 0 1-13.4 12q-8.4 6-21 14l-.7 1.3-.7 16.2-2.4 3.3-28.5 4.7-3.3-2-1.6-31.2 1.2-3.6 23-11q12.7-6.5 12.6-14.8t-9-12Q121 81 104 80l-2.8-4.2 13-28 4.3-2a112.3 112.3 0 0 1 25.7 3.6 74 74 0 0 1 20 8.6 42.8 42.8 0 0 1 13.2 12.5A27.8 27.8 0 0 1 182 86a33.2 33.2 0 0 1-2 11.6z"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 256 256">
+   <circle cx="128" cy="128" r="124" fill="#333"/>
+   <path fill="#fff" d="M99.8 188.6q12-.8 12-12.5V140q0-7.4-2-9.8t-8.1-2.4l-2.7.4-1.9.2 1.7-17.5q9.5-1.1 18.7-2.4l16.6-2.6 16.5-2.7 2.7 4.6q-5.1 9.5-5.1 73.4 0 3.6 1.2 5t4.1 1.4h1.5l1.7-.2 1.7-.2.6 1.1-2.5 17.9-10.6-.4-9.4-.3H128q-4.9 0-10.1.3l-9.9.7-10.6 1.1zm30.8-97.9q-9.7 0-14.8-5.2t-5.1-14.9q0-10.1 5.7-16t15.8-5.9q9.5 0 14.6 5.3t5.1 14.8q0 10.1-5.7 16t-15.6 5.9z"/>
+  </symbol>
+  <symbol id="icon-info-close" viewBox="0 0 256 256">
+   <circle cx="128" cy="128" r="124" fill="#333"/>
+   <path fill="#fff" d="M164.9 185.7l-10.4.2-14.1.5-17.9.5-1.2-1.2 2.2-17.1q7.6-.2 7.6-3.7a4.6 4.6 0 0 0-.4-1.8 25.1 25.1 0 0 0-1.6-2.8l-10.8-14.2q-3.4 4.4-6.9 9.2T108 163q0 5.4 7.1 5.4l1 2-2 16.4-12-.5-9.4-.4H78.2l-7.6.4-8.3.5-1-2.4 2.2-16.4q2.9-1.2 7.4-5.9T84 146.6l18.1-22L88 105.8Q82.4 98 76.8 95.2a50 50 0 0 0-12.6-4.3l-.7-1.2 1.7-19.6 8.3.2h37.1l11.6-.4 11.8-.7 1.2 2-1.7 18.1q-7.3 0-7.3 4.6a10.9 10.9 0 0 0 1.2 5.4 34.6 34.6 0 0 0 3.7 5.1l6.4 8.1 7.6-11 2.9-4.8a7.9 7.9 0 0 0 1.2-4 3 3 0 0 0-1.5-2.8q-1.5-.9-5.4-.9l-.5-1 1.5-17.6h34.9l7.7-.2 8.1-.5.7 1.5-1.2 19.1a148.9 148.9 0 0 0-12.5 8.4 41.9 41.9 0 0 0-9.1 9.5l-17.6 25.4L169 152a63 63 0 0 0 11.1 11.2 22.4 22.4 0 0 0 11.9 4.2l.7.7-2.7 18.1-10-.2h-15.1z"/>
+  </symbol>
+</svg>
+
+
+  
+
+
+
+
+
+
+<svg hidden>
+  <symbol id="icon-cheatsheet" viewBox="0 0 256 256">
+    <path d="M222 78.3c0-2.2-1-4.2-2.5-5.6l-56-56-.7-.6h-.2l-.8-.3c-.3 0-.6-.3-1-.4H41.4c-4 0-7.5 3-7.5 7v212c0 4 3.2 7 7.3 7h173c4 0 7.5-2.8 7.5-7v-156zm-56-38L196.4 71H166V40.2zM49 226V30h102v48.3c0 4 3.2 7.7 7.3 7.7H207v140H49z"/>
+  </symbol>
+  <symbol id="icon-checklist" viewBox="0 0 256 256">
+    <path d="M128 10.3C63 10.3 10.3 63 10.3 128S63 245.7 128 245.7 245.7 193 245.7 128 193 10.3 128 10.3zm0 215.6c-54 0-98-44-98-98s44-98 98-98 98 44 98 98-44 98-98 98z"/>
+    <path d="M103.8 158.2c4-8.6 9-18 14.7-28.3 5.7-11 12-21 19.2-31 7.3-10 12.3-17 15.7-20 3.3-4 6-6 8.3-8 2.3-2 6.3-4 12-5 6-1 10.3-1.7 13.2-1.7 2 0 3 .6 4 2 1 1 2 3 2 5 0 1.2-1 2.5-1 4-1 1-2 2.3-5 4.5-11 11-22 25-34 44s-21.8 37-28.8 55c-3.4 8-5.5 13-6.5 14-1 1.4-2.4 2.7-4.4 4s-6 1.7-12 1.7c-4.8 0-8-.7-9.3-1-1-1-2.2-1-3-2-.6-1-3-4-6-9-3.3-5.5-8.5-12-15-19-4-4.7-6-8-6-11 0-4 2-7.8 6-11 4.4-3 8.3-4.5 11.7-4.5 3.7 0 7.7 1.3 12 4.3 4.2 3 8 7 11.3 12z"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 256 256">
+    <path d="M128 4.5l37 74.7 82.4 12-59.7 58.2 14 82-73.7-38.7-73.8 38.8 14-82L8.7 91l82.5-12"/>
+  </symbol>
+  <symbol id="icon-tool" viewBox="0 0 256 256">
+    <path d="M206 122H50V13h126l.2 6.3c.5 17.6 7 24.5 23.8 25.2l6 .3V122zM63 109h130V56.7C176 54.2 166 44 163.8 26H63v83z"/>
+    <path d="M59 20h28v95H59zm55 95v120.7c0 4.2 3.2 7.3 7.4 7.3h14.8c4.2 0 7.8-3 7.8-7.3V115h-30z"/>
+  </symbol>
+</svg>
+
+<div class="masthead-wrap pad-t-1-2 pad-b-1-2">
+  <header class="masthead grid grid-middle wrapper gutter-1-2 pad-b-1-2" role="banner">
+    <div class="unit [ xs-1 m-1-4 ]">
+      <a class="logo link-box" href="/"><img class="img-flex" src="/images/logo.svg" alt="Learn the Web"></a>
+    </div>
+    
+      <nav class="top-nav unit [ xs-1 m-3-4 ] text-right" role="navigation">
+        <ul class="push-0 list-group-inline">
+          <li>
+            <a class="btn btn-ghost nav-current" href="/topics/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-nav" /></svg></i>
+              <span class="icon-label contents-link">Topics</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-ghost " href="/courses/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-courses" /></svg></i>
+              <span class="icon-label contents-link">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-ghost " href="/activities/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-activities" /></svg></i>
+              <span class="icon-label contents-link">Activities</span>
+            </a>
+          </li>
+          <li class="nav-home">
+            <a class="btn btn-ghost" href="/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-left" /></svg></i>
+              <span class="icon-label contents-link">Home</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+  </header>
+</div>
+
+
+<main class="relative" role="main" itemscope itemtype="http://schema.org/Article">
+  <div class="header push">
+    <div class="wrapper gutter-1-2 relative">
+      
+      
+        <a class="play-btn link-box link-box-no-mark" href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdcuLc0AjtdeuNSXyDiv_7-f" data-playlist="PLWjCJDeWfDdcuLc0AjtdeuNSXyDiv_7-f">
+          <i class="icon play-icon"><svg><use xlink:href="#icon-play"/></svg></i>
+          <strong class="giga icon-label play-icon-text">Watch the video playlist</strong>
+        </a>
+      
+      
+        <dl class="video-stats-default push-0 text-right gutter-1-2">
+          <dt class="micro text-upper">Watched</dt>
+          <dd class="yotta bold"><span id="playlist-watched-initial">0</span><sup class="milli">%</sup></dd>
+        </dl>
+      
+      <div class="embed embed--4by1 video-embed"></div>
+    </div>
+    
+      <div class="section-lightest" id="watch-stats" hidden>
+        <div class="wrapper island-1-2">
+          <dl class="video-stats push-0 clearfix relative">
+            <dt class="micro text-upper">№ videos</dt>
+            <dd class="bold left push-0 pad-t-1-2">
+              <span class="yotta" id="playlist-items">0</span>
+            </dd>
+            <dt class="micro text-upper">Total time</dt>
+            <dd class="bold left push-0 pad-t-1-2">
+              <span class="yotta"><span id="playlist-time-hours">0</span><span class="mega">h</span></span>
+              <span class="yotta"><span id="playlist-time-minutes">0</span><span class="mega">m</span></span>
+              <span class="yotta"><span id="playlist-time-seconds">0</span><span class="mega">s</span></span>
+            </dd>
+            <dt class="micro text-right text-upper">Watched</dt>
+            <dd class="text-right bold right push-0 pad-t-1-2">
+              <span class="yotta" id="playlist-watched">0</span><sup class="video-stats-percent milli">%</sup>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="grid wrapper relative gutter-1-2">
+    <div class="unit [ xs-1 s-1 m-1 l-1-4 ] pad-t-1-2 push">
+      <ul class="downloads list-group grid push-1-2">
+        
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost" href="/topics/images-cheat-sheet/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-cheatsheet"/></svg></i>
+              <span class="icon-label">Get cheat sheet</span>
+            </a>
+          </li>
+        
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost btn-subtle" href="https://github.com/acgd-learn-the-web/images-for-retina-code/archive/master.zip">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-download"/></svg></i>
+              <span class="icon-label">Download code</span>
+            </a>
+          </li>
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost btn-subtle" href="https://github.com/acgd-learn-the-web/images-for-retina-code">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-github"/></svg></i>
+              <span class="icon-label">Browse code</span>
+            </a>
+          </li>
+        
+      </ul>
+
+      <nav class="tutorial-nav" hidden>
+        <input type="checkbox" class="visually-hidden nav-check" id="nav-check">
+        <label class="nav-label giga" for="nav-check">
+          <i class="icon i-nav"></i>
+          <span class="icon-label">Contents</span>
+        </label>
+      </nav>
+    </div>
+
+    <article class="tutorial unit [ xs-1 s-1 m-1 l-3-4 ] pad-t-1-2">
+      <h1 class="yotta" id="start" itemprop="name" tabindex="0">Images for retina screens</h1>
+      <div itemprop="articleBody">
+        <p class="giga">With many screens now high resolution we need to prepare our images so they are crisper and clearer.</p>
+
+<hr />
+
+<h2 id="choosing-the-right-technique">Choosing the right technique</h2>
+
+<p>There are a few techniques we can use for hi-res screens.</p>
+
+<p><img src="flow-chart.png" alt="" /></p>
+
+<ol>
+  <li><strong>Can the look be accomplished practically in CSS?</strong>
+  <br /><em>Yes:</em> Use CSS.</li>
+  <li><strong>Is it a simple vector-like graphic (logo, icon, illustration)?</strong>
+  <br /><em>Yes:</em> <strong>Can the look be accomplished with SVG?</strong>
+    <ul>
+      <li><em>Yes</em>: Use SVG.</li>
+      <li><em>No</em>: Use a double-size PNG and scale it down.</li>
+    </ul>
+  </li>
+  <li><strong>Is it a photo that’s always cropped the same?</strong>
+  <br /><em>Yes:</em> Use compressive JPGs.
+  <br /><em>No</em>: Try: <code>&lt;img srcset=""&gt;</code>, <code>&lt;picture&gt;</code>, <code>image-set()</code>, or <code>@media</code> to provide different versions of the image.</li>
+</ol>
+
+<hr />
+
+<h2 id="css">CSS</h2>
+
+<p>Anything done in CSS is naturally retina friendly. So, if you can accomplish the look in CSS alone, do it with CSS.</p>
+
+<p>Some <em>good</em> examples of when CSS works well:</p>
+
+<ul>
+  <li>Gradients, shadows, rounded corners</li>
+  <li>Web fonts, text shadows</li>
+</ul>
+
+<p>Some <em>bad</em> examples of when CSS shouldn’t be used, primarily because of memory concerns:</p>
+
+<ul>
+  <li>Icons &amp; illustrations</li>
+  <li>Extremely complex gradients</li>
+</ul>
+
+<hr />
+
+<h2 id="svg">SVG</h2>
+
+<p>SVG graphics are also inherently retina friendly. If you have a simple graphic and SVG can produce a good result, use SVG.</p>
+
+<p>Don’t use SVG for extremely complex graphics (because of memory concerns) and don’t use SVG for photos.</p>
+
+<hr />
+
+<h2 id="compressive-jpgs">Compressive JPGs</h2>
+
+<p>Compressive JPGs are a technique for supplying hi-resolution photos while reducing the download size.</p>
+
+<p>The major downside of this technique is that the images can become very memory intensive.</p>
+
+<h3 id="creating-compressive-jpgs">Creating compressive JPGs</h3>
+
+<ol>
+  <li>Go to your website and, using the developer tools, determine the maximum width your image will be displayed at,</li>
+  <li>Open the original source file in Photoshop and make its width double the size you determined for your website,</li>
+  <li>Use <code>Save For Web</code> to compress the image to a JPG with a quality of somewhere around 20%–30%.</li>
+</ol>
+
+<p>Then, when sizing your JPG to the appropriate dimensions in the your website, it will actually be double the pixel width and shrunken down by the browser, therefore displayed crisply.</p>
+
+<pre><code>(retina width) = (display width in browser) * 2
+</code></pre>
+
+<p><strong>No image, displayed on a website, should ever be larger than <code>2500px</code> or <code>300kB</code>.</strong></p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="https://www.netvlies.nl/tips-updates/algemeen/algemeen/retina-revolution/">Retina Revolution Compressive JPEGs</a></li>
+  <li><a href="http://filamentgroup.com/lab/rwd_img_compression/">RWD Image Compression</a></li>
+</ul>
+
+<hr />
+
+<h2 id="pngs">PNGs</h2>
+
+<p>Sometimes SVG graphics don’t produce the result you want for icons yet you still want to provide crisp graphics for hi-res screens.</p>
+
+<p>First, similar in technique to compressive JPGs, just make a double size PNG and scale it down in your website—either using an <code>&lt;img&gt;</code> tag or <code>background-image</code>.</p>
+
+<p>If that’s too memory intensive, or creates too large of a file, try some of the below techniques.</p>
+
+<hr />
+
+<h2 id="image-tag-source-sets">Image tag source sets</h2>
+
+<p>There’s a new attribute—<code>srcset</code>—on the <code>&lt;img&gt;</code> tag that allows us to provide different versions of our images and the browser will determine which image to show on the screen.</p>
+
+<pre><code class="language-html">&lt;img
+  src="low-res.jpg"
+  srcset="med-res.jpg 1000w, high-res.jpg 2000w"
+  alt="A giant squid swimming deep in the sea"
+&gt;
+</code></pre>
+
+<p>In the <code>srcset</code> attribute we provide different versions of the image and what <code>width</code> they are, the browser will figure everything else out for us.</p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="http://caniuse.com/#feat=srcset">Can I use: srcset</a></li>
+</ul>
+
+<hr />
+
+<h2 id="picture-element">Picture element</h2>
+
+<p>There’s a new HTML element for managing and targeting different graphics to different screen sizes: the <code>&lt;picture&gt;</code> element.</p>
+
+<p>The <code>&lt;picture&gt;</code> element works is specifically targeted at art direction: serving differently framed and cropped images to different screen sizes.</p>
+
+<p><em>Browser support isn’t amazing—only the most recent versions of all browsers support it.</em></p>
+
+<pre><code class="language-html">&lt;picture&gt;
+  &lt;!-- Put the biggest at the top, because the first appropriate one will be selected --&gt;
+  &lt;source media="(min-width: 60em)" src="high-res.jpg"&gt;
+  &lt;source media="(min-width: 35em)" src="medium-res.jpg"&gt;
+  &lt;img src="low-res.jpg" alt="A giant squid swimming deep in the sea"&gt;
+&lt;/picture&gt;
+</code></pre>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><strong><a href="http://scottjehl.github.io/picturefill/">Picturefill</a></strong> (Good for <code>srcset</code> too!)</li>
+  <li><a href="http://caniuse.com/#feat=picture">Can I use: picture</a></li>
+</ul>
+
+<hr />
+
+<h2 id="background-images">Background images</h2>
+
+<p>We can use a media query for detecting hi-res screens and supply two different images in our CSS.</p>
+
+<pre><code class="language-html">&lt;i class="icon"&gt;&lt;/i&gt;
+</code></pre>
+
+<pre><code class="language-css">.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/icon.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+  .icon {
+    background-image: url("../img/icon-2x.png");
+    background-size: 32px 32px;
+  }
+
+}
+</code></pre>
+
+<p><em>Or you can try the new <code>image-set()</code> function—which doesn’t have very good browser support yet.</em></p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li>Retina media queries: <a href="https://gist.github.com/3855791">https://gist.github.com/3855791</a></li>
+  <li><a href="http://timkadlec.com/2012/04/media-query-asset-downloading-results/">Media Query Asset Downloading Results</a></li>
+  <li><a href="http://caniuse.com/#feat=css-media-resolution">Can I use: resolution media query</a></li>
+  <li><a href="http://caniuse.com/#feat=css-image-set">Can I use: image-set</a></li>
+  <li><a href="http://dev.w3.org/csswg/css-images-3/#image-set-notation">Background image-set</a></li>
+</ul>
+
+<hr />
+
+<h2 id="video-list">Video list</h2>
+
+<ol>
+  <li><a href="https://www.youtube.com/watch?v=3SzWx4_mL7A&amp;list=PLWjCJDeWfDdcuLc0AjtdeuNSXyDiv_7-f&amp;index=1">Images for retina screens: compressive JPGs</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Q91vXeF0mpU&amp;list=PLWjCJDeWfDdcuLc0AjtdeuNSXyDiv_7-f&amp;index=2">Images for retina screens: multi-resolution PNGs</a></li>
+</ol>
+
+<h2 id="supplemental-links">Supplemental links</h2>
+
+<ul>
+  <li><strong><a href="http://alistapart.com/article/responsive-images-in-practice">A List Apart: Responsive Images in Practice</a></strong></li>
+  <li><strong>Responsive Images 101: <a href="http://blog.cloudfour.com/responsive-images-101-definitions/">Part 1</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-2-img-required/">Part 2</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-3-srcset-display-density/">Part 3</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-4-srcset-width-descriptors/">Part 4</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-5-sizes/">Part 5</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-6-picture-element/">Part 6</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-7-type/">Part 7</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-8-css-images/">Part 8</a>, <a href="http://blog.cloudfour.com/responsive-images-101-part-9-image-breakpoints/">Part 9</a></strong></li>
+  <li><a href="http://www.smashingmagazine.com/2014/05/14/responsive-images-done-right-guide-picture-srcset/">Smashing Magazine: Responsive Images Done Right: A Guide To picture And srcset</a></li>
+  <li><a href="https://www.youtube.com/watch?v=WZAx3f0nJS0">The web, performance, retina images</a></li>
+  <li><a href="http://ericportis.com/posts/2014/srcset-sizes/">Srcset and sizes</a></li>
+  <li><a href="http://sizersoze.org/">Sizer Soze</a></li>
+</ul>
+
+      </div>
+    </article>
+  </div>
+
+</main>
+
+<aside>
+  
+  
+  
+  
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+      
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+        
+        
+
+  <div class="tutorial-footer wrapper gutter-1-2 pad-t pad-b">
+    <ul class="list-group controls push-0">
+      
+        
+        
+        
+        <li class="controls-prev push-1-4">
+          <a class="btn btn-ghost" href="/topics/using-images/" rel="prev">
+            <i class="icon i-24 i-shift-left"><svg><use xlink:href="#icon-left" /></svg></i>
+            <span class="icon-label">Using images</span>
+          </a>
+        </li>
+      
+      <li class="controls-start push-1-4">
+        <a class="btn btn-ghost" href="/topics/#images-for-retina" rel="start">
+          <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-nav" /></svg></i>
+          <span class="icon-label">Topics</span>
+        </a>
+      </li>
+      
+        
+        
+        
+        <li class="controls-next push-1-4">
+          <a class="btn btn-ghost" href="/topics/images-cheat-sheet/" rel="next">
+            <span class="icon-label">Images cheat sheet</span>
+            <i class="icon i-24 i-shift-right"><svg><use xlink:href="#icon-right" /></svg></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</aside>
+
+
+
+  <div class="footer-wrap pad-t-1-2 pad-b-1-2">
+    <footer class="footer grid wrapper gutter-1-2" role="contentinfo">
+      <div class="unit [ xs-1 s-1 m-2-5 unit-push-m-3-5 l-2-5 ]">
+        <ul class="list-group footer-links micro">
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="/get-help/" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-help"/></svg></i>
+              <strong class="icon-label">Get help</strong>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="/solutions/" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-victory"/></svg></i>
+              <span class="icon-label">Solutions for teachers</span>
+            </a>
+          </li>
+          <li class="push-1-2">
+            <a class="icon-link link-box link-box-no-mark" href="/schedule/" rel="external">
+              <i class="icon i-16"><svg><use xlink:href="#icon-courses"/></svg></i>
+              <span class="icon-label">Term schedule</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-group-inline footer-links micro">
+          <li class="push-r-1-4">
+            <a class="icon-link link-box link-box-no-mark" href="https://github.com/acgd-learn-the-web" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-github"/></svg></i>
+              <span class="icon-label">GitHub</span>
+            </a>
+          </li>
+          <li class="push-r-1-4">
+            <a class="icon-link link-box link-box-no-mark" href="https://www.youtube.com/user/acinteractivedesign" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-play"/></svg></i>
+              <span class="icon-label">YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="https://github.com/acgd-learn-the-web/topics/issues" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-bug"/></svg></i>
+              <span class="icon-label">Feedback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="unit [ xs-1 s-1 m-3-5 unit-pull-m-2-5 l-3-5 ]">
+        <small class="copyright micro">© Algonquin College Graphic Design — <a href="http://algonquindesign.ca/">algonquindesign.ca</a>.</small>
+        <small class="copyright micro">All code for this website licensed under the <a href="https://github.com/acgd-learn-the-web/acgd-learn-the-web.github.io/blob/master/LICENSE" rel="license">MIT License</a>.</small>
+        <small class="copyright micro">All tutorial code licensed under the <a href="https://github.com/acgd-learn-the-web/topics/blob/master/UNLICENSE" rel="license">Unlicense</a>.</small>
+        <small class="copyright micro">All text, imagery, design, tutorials &amp; videos licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA License</a>.</small>
+        <small class="copyright micro push-1-4">Unless otherwise noted.</small>
+        <p class="copyright micro push-0 italic">Last build — <a href="https://github.com/acgd-learn-the-web/topics/commits/master" rel="external">2017-06-29 18:26 UTC</a>.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>var slug = 'images-for-retina';</script>
+  <script>(function(){'use strict';var f=[];function g(a){f.push(a);1===f.length&&l()}function m(){for(;f.length;)f[0](),f.shift()}if(window.MutationObserver){var n=document.createElement("div");(new MutationObserver(m)).observe(n,{attributes:!0});var l=function(){n.setAttribute("x",0)}}else l=function(){setTimeout(m)};function p(a){this.a=q;this.b=void 0;this.f=[];var b=this;try{a(function(a){r(b,a)},function(a){t(b,a)})}catch(c){t(b,c)}}var q=2;function u(a){return new p(function(b,c){c(a)})}function v(a){return new p(function(b){b(a)})}
+function r(a,b){if(a.a===q){if(b===a)throw new TypeError("Promise settled with itself.");var c=!1;try{var d=b&&b.then;if(null!==b&&"object"===typeof b&&"function"===typeof d){d.call(b,function(b){c||r(a,b);c=!0},function(b){c||t(a,b);c=!0});return}}catch(e){c||t(a,e);return}a.a=0;a.b=b;w(a)}}function t(a,b){if(a.a===q){if(b===a)throw new TypeError("Promise settled with itself.");a.a=1;a.b=b;w(a)}}
+function w(a){g(function(){if(a.a!==q)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0===a.a?"function"===typeof c?e(c.call(void 0,a.b)):e(a.b):1===a.a&&("function"===typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}p.prototype.g=function(a){return this.c(void 0,a)};p.prototype.c=function(a,b){var c=this;return new p(function(d,e){c.f.push([a,b,d,e]);w(c)})};
+function x(a){return new p(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e===a.length&&b(h)}}var e=0,h=[];0===a.length&&b(h);for(var k=0;k<a.length;k+=1)v(a[k]).c(d(k),c)})}function y(a){return new p(function(b,c){for(var d=0;d<a.length;d+=1)v(a[d]).c(b,c)})};window.Promise||(window.Promise=p,window.Promise.resolve=v,window.Promise.reject=u,window.Promise.race=y,window.Promise.all=x,window.Promise.prototype.then=p.prototype.c,window.Promise.prototype["catch"]=p.prototype.g);}());
+
+(function(){'use strict';function h(a){document.body?a():document.addEventListener("DOMContentLoaded",a)};function v(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.g=document.createElement("span");this.f=-1;this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.g.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;";this.b.appendChild(this.h);this.c.appendChild(this.g);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function w(a,c,b){a.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font-size:100px;font-family:"+c+";"+b}function x(a){var c=a.a.offsetWidth,b=c+100;a.g.style.width=b+"px";a.c.scrollLeft=b;a.b.scrollLeft=a.b.scrollWidth+100;return a.f!==c?(a.f=c,!0):!1}
+function y(a,c){a.b.addEventListener("scroll",function(){x(a)&&null!==a.a.parentNode&&c(a.f)},!1);a.c.addEventListener("scroll",function(){x(a)&&null!==a.a.parentNode&&c(a.f)},!1);x(a)};function z(a,c){var b=c||{};this.family=a;this.style=b.style||"normal";this.variant=b.variant||"normal";this.weight=b.weight||"normal";this.stretch=b.stretch||"stretch";this.featureSettings=b.featureSettings||"normal"}var B=null;
+z.prototype.a=function(a,c){var b=a||"BESbswy",C=c||3E3,k="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",g=document.createElement("div"),l=new v(b),m=new v(b),n=new v(b),d=-1,e=-1,f=-1,q=-1,r=-1,t=-1,p=this;return new Promise(function(a,b){function c(){null!==g.parentNode&&g.parentNode.removeChild(g)}
+function u(){if(-1!==d&&-1!==e||-1!==d&&-1!==f||-1!==e&&-1!==f)if(d===e||d===f||e===f){if(null===B){var b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))}B?d===q&&e===q&&f===q||d===r&&e===r&&f===r||d===t&&e===t&&f===t||(c(),a(p)):(c(),a(p))}}h(function(){function a(){if(Date.now()-D>=C)c(),b(p);else{var A=document.hidden;if(!0===A||void 0===A)d=l.a.offsetWidth,e=m.a.offsetWidth,f=n.a.offsetWidth,
+u();setTimeout(a,50)}}var D=Date.now();w(l,"sans-serif",k);w(m,"serif",k);w(n,"monospace",k);g.appendChild(l.a);g.appendChild(m.a);g.appendChild(n.a);document.body.appendChild(g);q=l.a.offsetWidth;r=m.a.offsetWidth;t=n.a.offsetWidth;a();y(l,function(a){d=a;u()});w(l,'"'+p.family+'",sans-serif',k);y(m,function(a){e=a;u()});w(m,'"'+p.family+'",serif',k);y(n,function(a){f=a;u()});w(n,'"'+p.family+'",monospace',k)})})};window.FontFaceObserver=z;window.FontFaceObserver.prototype.check=z.prototype.a;}());
+</script>
+  <script>var alegreyaNormal,alegreyaItalic,alegreyaBold;sessionStorage.alegreyaLoaded?document.documentElement.className+=" alegreya-loaded":(alegreyaNormal=new FontFaceObserver("Alegreya Sans",{weight:"normal"}),alegreyaItalic=new FontFaceObserver("Alegreya Sans",{style:"italic"}),alegreyaBold=new FontFaceObserver("Alegreya Sans",{weight:"bold"}),Promise.all([alegreyaNormal.check(),alegreyaItalic.check(),alegreyaBold.check()]).then(function(){document.documentElement.className+=" alegreya-loaded",sessionStorage.alegreyaLoaded=!0}));</script>
+  <script src="/js/common.min.js?v=92" async></script>
+  
+    <script src="/js/article.min.js?v=92" defer></script>
+    <script>var sourceCodeProNormal,sourceCodeProBold;sessionStorage.sourceCodeProLoaded?document.documentElement.className+=" source-code-pro-loaded":(sourceCodeProNormal=new FontFaceObserver("Source Code Pro",{weight:"normal"}),sourceCodeProBold=new FontFaceObserver("Source Code Pro",{weight:"bold"}),Promise.all([sourceCodeProNormal.check(),sourceCodeProBold.check()]).then(function(){document.documentElement.className+=" source-code-pro-loaded",sessionStorage.sourceCodeProLoaded=!0}));</script>
+    <script>
+      var path = window.location.pathname.replace('/topics/', '').replace('/', '');
+      localStorage.setItem('visited-' + path, true);
+    </script>
+  
+</body>
+</html>

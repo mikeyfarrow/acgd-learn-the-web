@@ -1,3 +1,16 @@
+# Note from mikeyfarrow
+
+The static site has been generated already. See ``_site/`` directory.
+
+To build:
+
+```
+yarn install
+mkdir js # if the folder does not already exist
+yarn run build
+jekyll build # or `jekyll serve`
+```
+
 # Learn the Web · Algonquin Design
 
 The wrapper and templates for the website.

@@ -1,0 +1,542 @@
+
+[
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+      
+      
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-04/",
+  "title": "Semantics map-out",
+  "slug": "semantics-map-out"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-04/",
+  "title": "Masthead semantics",
+  "slug": "masthead-semantics"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-04/",
+  "title": "HTML validation fixes",
+  "slug": "html-validation-fixes"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-04/",
+  "title": "Content semantics",
+  "slug": "content-semantics"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-05/",
+  "title": "Use all the selectors!",
+  "slug": "use-all-the-selectors"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-05/",
+  "title": "CSS validation fixes",
+  "slug": "css-validation-fixes"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-05/",
+  "title": "Stylish beets",
+  "slug": "stylish-beets"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-06/",
+  "title": "Sketching a website",
+  "slug": "sketching-a-website"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-06/",
+  "title": "Horizontal navigation",
+  "slug": "horizontal-nav"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-06/",
+  "title": "Sections",
+  "slug": "sections"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-07/",
+  "title": "Navigation highlight",
+  "slug": "navigation-highlight"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-07/",
+  "title": "Button styles",
+  "slug": "button-styles"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-07/",
+  "title": "Link card",
+  "slug": "link-card"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-08/",
+  "title": "Header icons",
+  "slug": "header-icons"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-08/",
+  "title": "Typographic insets",
+  "slug": "typographic-insets"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-08/",
+  "title": "Columns of cards",
+  "slug": "columns-of-cards"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-10/",
+  "title": "Hero banner",
+  "slug": "hero-banner"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-10/",
+  "title": "Call to action banner",
+  "slug": "call-to-action-banner"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-10/",
+  "title": "Exploding robot head",
+  "slug": "exploding-robot-head"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-11/",
+  "title": "A web of screen sizes",
+  "slug": "a-web-of-screen-sizes"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-11/",
+  "title": "Hide & show responsively",
+  "slug": "hide-show-responsively"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-11/",
+  "title": "Responsive typography",
+  "slug": "responsive-typography"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-11/",
+  "title": "Responsive icon cards",
+  "slug": "responsive-icon-cards"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-12/",
+  "title": "Paper plans",
+  "slug": "paper-plans"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-12/",
+  "title": "Image grid",
+  "slug": "image-grid"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-12/",
+  "title": "Responsive header",
+  "slug": "responsive-header"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-12/",
+  "title": "Responsive section",
+  "slug": "responsive-section"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-13/",
+  "title": "Finding patterns",
+  "slug": "finding-patterns"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-1/week-13/",
+  "title": "Responsive image & caption",
+  "slug": "responsive-image-caption"
+},
+
+    
+      
+  
+    
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+]

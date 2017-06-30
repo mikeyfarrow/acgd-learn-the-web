@@ -1,0 +1,1053 @@
+
+
+
+
+
+[
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Acronym Annihilator",
+  "description": "<h2><a href=\"http://localhost:5000/acronym-annihilator/\">http://localhost:5000/acronym-annihilator/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["acronym-annihilator"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Responsive banner",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-01/#responsive-banner\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-01/#responsive-banner</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["responsive-banner"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+        
+        
+        
+        
+        
+        
+        
+
+
+
+{
+  "name": "Dog rescue redesign UX",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-01/#dog-rescue-redesign-ux\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-01/#dog-rescue-redesign-ux</a></h2>",
+  "assignment_group_id": "project",
+  "grading_type": "letter_grade",
+  "points_possible": 100,
+  "submission_types": "none",
+  "allowed_extensions": ["dog-rescue-redesign-ux"],
+  "published": true,
+  "muted": true
+},
+
+      
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "News reader effects",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/news-reader-effects/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/news-reader-effects/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["news-reader-effects"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Interactive polaroids",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-02/#interactive-polaroids\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-02/#interactive-polaroids</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["interactive-polaroids"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Animated clock",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-02/#animated-clock\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-02/#animated-clock</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["animated-clock"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "SVG smiley face",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/svg-smiley-face/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/svg-smiley-face/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["svg-smiley-face"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Interactive SVG",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-03/#interactive-svg\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-03/#interactive-svg</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["interactive-svg"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Using SVG icons",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/using-svg-icons/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/using-svg-icons/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["using-svg-icons"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "SVG icons sets",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-04/#svg-icon-sets\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-04/#svg-icon-sets</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["svg-icon-sets"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Using CSS variables",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/using-css-variables/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/using-css-variables/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["using-css-variables"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Pattern library set-up",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/pattern-library-set-up/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/pattern-library-set-up/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["pattern-library-set-up"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Typography & colours",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-05/#typography-colours\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-05/#typography-colours</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["typography-colours"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Pattern library README",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/pattern-library-readme/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/pattern-library-readme/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["pattern-library-readme"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Making a new pattern",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/making-a-new-pattern/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/making-a-new-pattern/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["making-a-new-pattern"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Buttons!",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-06/#buttons\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-06/#buttons</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["buttons"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Multi-file patterns",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/multi-file-patterns/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/multi-file-patterns/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["multi-file-patterns"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Icons",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-07/#icons\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-07/#icons</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["icons"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Images & cards",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-07/#images-cards\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-07/#images-cards</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["images-cards"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Designing form errors",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/designing-form-errors/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/designing-form-errors/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["designing-form-errors"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Forms & fields",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-08/#forms\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-08/#forms</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["forms"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "URL Explorer",
+  "description": "<h2><a href=\"http://localhost:5000/url-explorer/\">http://localhost:5000/url-explorer/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["url-explorer"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Browser testing",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["/courses/web-dev-1/browser-testing/"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Navigations & sections",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-09/#navigations-sections\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-09/#navigations-sections</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["navigations-sections"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "SVG Synthesizer",
+  "description": "<h2><a href=\"http://localhost:5000/svg-synthesizer/\">http://localhost:5000/svg-synthesizer/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["svg-synthesizer"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Headers & footers",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-10/#headers-footers\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-10/#headers-footers</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["headers-footers"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Specificity Spy",
+  "description": "<h2><a href=\"http://localhost:5000/specificity-spy/\">http://localhost:5000/specificity-spy/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["specificity-spy"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Javascript-less carousel",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/javascript-less-carousel/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/javascript-less-carousel/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["javascript-less-carousel"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Browser testing",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["/courses/web-dev-1/browser-testing/"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Homepage template",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-12/#homepage-template\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-12/#homepage-template</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["homepage-template"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Markdown Manipulator",
+  "description": "<h2><a href=\"http://localhost:5000/markdown-manipulator/\">http://localhost:5000/markdown-manipulator/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["markdown-manipulator"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Available dogs page template",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-13/#available-dogs-page-template\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-13/#available-dogs-page-template</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["available-dogs-page-template"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "YAML Yodeller",
+  "description": "<h2><a href=\"http://localhost:5000/yaml-yodeller/\">http://localhost:5000/yaml-yodeller/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["yaml-yodeller"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Form page template",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-14/#form-page-template\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-14/#form-page-template</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["form-page-template"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Browser testing",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4//courses/web-dev-1/browser-testing//</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["/courses/web-dev-1/browser-testing/"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+        
+        
+        
+        
+        
+        
+        
+
+
+
+{
+  "name": "Finalized pattern library",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-15/#finalized-pattern-library\">https://learn-the-web.algonquindesign.ca/courses/web-dev-4/week-15/#finalized-pattern-library</a></h2>",
+  "assignment_group_id": "project",
+  "grading_type": "letter_grade",
+  "points_possible": 100,
+  "submission_types": "none",
+  "allowed_extensions": ["finalized-pattern-library"],
+  "published": true,
+  "muted": true
+},
+
+      
+    
+  
+
+]

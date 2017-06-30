@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  
+<meta charset="utf-8">
+<title>Advanced SVG · Web Dev Topics · Learn the Web</title>
+<meta name="description" content="Writing and using SVG in more complex scenarios with animations, transitions, and other effects.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="/fonts/alegreyasans-regular.woff" rel="preload" as="font">
+<link href="/fonts/alegreyasans-italic.woff" rel="preload" as="font">
+<link href="/fonts/alegreyasans-bold.woff" rel="preload" as="font">
+<link href="/fonts/sourcecodepro-regular.woff" rel="preload" as="font">
+<link href="/fonts/sourcecodepro-bold.woff" rel="preload" as="font">
+<link href="/css/main.min.css?v=92" rel="stylesheet">
+<meta name="application-name" content="Learn the Web">
+<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
+<meta name="msapplication-TileImage" content="/favicon-144.png">
+<meta name="msapplication-TileColor" content="#00deae">
+<link rel="profile" href="http://osprotocol.com">
+<meta property="os:repo" content="https://github.com/acgd-learn-the-web">
+<meta property="os:rcs_type" content="git">
+<meta property="os:src" content="git@github.com:acgd-learn-the-web/topics.git">
+<meta property="os:issue" content="https://github.com/acgd-learn-the-web/topics/issues">
+
+  
+  <link href="/css/main-article.min.css?v=92" rel="stylesheet">
+  
+  
+</head>
+<body >
+
+  <svg hidden>
+  <symbol id="icon-nav" viewBox="0 0 256 256">
+    <path d="M8.5 27h239v35.7H8.5V27zm0 83.6h239v35.8H8.5v-35.8zm0 83.6h239V230H8.5v-35.8z"/>
+  </symbol>
+  <symbol id="icon-activities" viewBox="0 0 256 256">
+    <path d="M128 10.3A117.7 117.7 0 1 0 245.7 128 117.7 117.7 0 0 0 128 10.3zm0 210.2a92.5 92.5 0 1 1 92.5-92.5 92.5 92.5 0 0 1-92.5 92.5z"/>
+    <path d="M178.3 75a79.6 79.6 0 0 0-11.2 1.2q-7 1.2-10 3.7t-7 6q-4 4.2-13 17.3a290.3 290.3 0 0 0-16.3 26.3Q113 143 108 154a39.5 39.5 0 0 0-10-10q-5.4-4-10-4t-10 4q-5.7 4-5.7 9.5 0 3.7 5 9A135.2 135.2 0 0 1 90 179a69.5 69.5 0 0 0 5.3 7.7 9.6 9.6 0 0 0 2.7 1.6q1.7.8 8 .8 7.7 0 10.3-1a12 12 0 0 0 3.7-3q1.2-2 5.5-12.2a281.7 281.7 0 0 1 24.3-46.6q15.3-24 29.5-37a29.6 29.6 0 0 0 4-4.3 6 6 0 0 0 .8-3.3 5.4 5.4 0 0 0-1-4 5.7 5.7 0 0 0-4-1.6z"/>
+  </symbol>
+  <symbol id="icon-courses" viewBox="0 0 256 256">
+    <circle cx="44.4" cy="40.4" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 40.4H229" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44.4" cy="128" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 128H229" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="44.4" cy="215.6" r="33.4"/>
+    <path fill="none" stroke-width="32" d="M116.4 215.6H229" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-left" viewBox="0 0 50 100">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M41.7 82.6L8.3 49.3l32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-right" viewBox="0 0 50 100">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M8.3 82.6l33.4-33.3-32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-down" viewBox="0 0 100 50">
+    <path fill="none" stroke-width="12" stroke-miterlimit="10" d="M17.4 8.3l33.3 33.4 32-32" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-play" viewBox="0 0 256 190">
+    <path d="M249.5 45.4s-2.4-17-10-24.6c-9.3-10-20-10-24.7-10.5C180 7.8 128 7.8 128 7.8s-52.2 0-87 2.5c-4.7.6-15.3.6-24.7 10.5-7.4 7.5-10 24.6-10 24.6S4 65.4 4 85.6v18.8c0 20 2.5 40 2.5 40s2.4 17.2 10 24.7c9.3 10 21.7 9.8 27.2 10.8 19.8 2 84.3 2.5 84.3 2.5s52 0 86.8-2.6c4.8-.6 15.4-.6 24.8-10.5 7.4-7.4 10-24.5 10-24.5s2.4-20 2.4-40v-19c0-20-2.5-40-2.5-40zm-147 81.8V57.5l67 35-67 34.7z"/>
+  </symbol>
+  <symbol id="icon-download" viewBox="0 0 256 256">
+    <path d="M234.3 1H21.7C10.3 1 1 10.3 1 21.7v212.5c0 11.5 9.3 20.7 20.7 20.7h212.5c11.5 0 20.7-9.6 20.7-21V21.7C255 10.3 245.4 1 234 1zM128 220.7L48.4 123H88V48h79v75h40.6L128 220.7z"/>
+  </symbol>
+  <symbol id="icon-github" viewBox="0 0 256 256">
+    <path d="M213.7 117c2-8 2.5-17.2 2.5-27.3 0-16-6-28.7-15.7-38.4 1.7-5.5 4-17.6-2.3-33.2 0 0-11-3-36 14-9.6-2.3-20-3.5-30.4-3.5-11.4 0-23 1.5-33.7 4.4-25-17.5-37-14-37-14-7 18.3-2 32-1 35.3-8.3 9.6-14 21.5-14 36 0 10.5 1 19.8 4 28 0 .6 4.4 10 4.7 10.4l1.8 2.6c9.4 14 26 23 53.8 26-4.2 2.4-8.6 7.3-10.4 16-6 3-24.7 9.4-35.8-9.8 0 0-6.2-11.4-18.2-12.3 0 0-11.4-.3-.6 7 0 0 8.3 4 13.6 17.5 0 0 6 23.4 41 16v24s-1 8.7-9 11.5c0 0-5 3 0 5 0 0 21 2 21-16v-26.5s0-10.5 6-14V219s-.8 10.2-6 14.2c0 0-4 6.5 4 4.7 0 0 14.7-2 15.4-20v-43h3.3l.4 43.2c.5 17.5 15.5 19.4 15.5 19.4 8 1.8 4.5-4.7 4.5-4.7-5.3-4-5.5-14.5-5.5-14.5v-43c6 4 5 13.7 5 13.7V216c0 17.8 21.2 16 21.2 16 5-1.7.3-5 .3-5-8-2.8-8.5-11.3-8.5-11.3V181c0-13.5-6-20.6-11.4-24.4 31-3 46.7-12.8 54-28 .7-.5 4-10.8 4.4-11.6zm-82 33.6c-35.3 0-64-5.3-64-39.4 0-8.2 4-15.8 11-22 11.5-10.6 31-5 53-5s41.4-5.6 53 4.8c7 6.3 11 14 11 22.2 0 38.4-28.7 39.4-64 39.4z"/>
+    <path d="M97 94c-7 0-13 8.6-13 19 0 10.7 6 19.3 13.3 19.3s13.4-8.6 13.4-19.2c0-10-6-19-13.3-19zm71.5 0c-7.3 0-13.3 8.6-13.3 19 0 10.7 6 19.3 13.3 19.3 7.3 0 13.3-8.6 13.3-19.2 0-10-6-19-13.3-19z"/>
+  </symbol>
+  <symbol id="icon-bug" viewBox="0 0 256 256">
+    <path d="M47.6 84L31 67.5c-3-3-8-3-11.2 0-3 3.2-3 8.2 0 11.3l19 17.8c1.4 1.5 3.4 1 5.5 1h15.4c-11 14-18.2 30.4-20.8 47H12c-4.4 0-8 3.8-8 8.2 0 4.4 3.6 8.3 8 8.3h25.7c0 14 3.6 28 9.7 39h-5.7c-2 0-4 1-5.6 3l-18 19c-3 3-3 8 0 11.4 1.7 1.5 3.8 2.4 5.8 2.4s4-.8 5.6-2.3L45 216h12.8c15.6 19.4 40 32 64.8 33.3V84h-75zM244 144.6h-27.4c-3.4-16.5-12.2-33-22.5-46.8h18c2 0 4 .4 6-1l19-18.5c3-3 3-7.8 0-11-3-3-8-3-11 0L209 84h-75v165.3c25-1.6 49-16.6 64.4-33h13L228 233c1.4 1 3.5 2 5.5 2s4-1 5.8-2.8c3-3.2 3-8.2 0-11.3l-19-19.6c-1.4-1.5-3.4-2.7-5.5-2.7h-6c6-11 9.6-24.8 9.7-38.5h26c4.3 0 8-4 8-8.4s-3.8-8-8-8zM77 73h102c0-19.3-9.6-33.8-24-42.8l10.4-10c3-3.2 3-8 0-11.2-3-3-8-3-11.2 0l-15 15c-3.6-.7-7.4-1.2-11.3-1.2s-8 .5-12 1.3L101 9c-3-3-8-3-11 0-3 3.7-3 8.7 0 11.8l10.3 10c-13.7 8.4-23 23-23 42.2z"/>
+  </symbol>
+  <symbol id="icon-steps" viewBox="0 0 256 256">
+    <circle cx="41.8" cy="63.2" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 63.2H239" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="41.8" cy="128" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 128H239" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="41.8" cy="192.8" r="24.7"/>
+    <path fill="none" stroke-width="17" stroke-miterlimit="10" d="M87.7 192.8H239" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-victory" viewBox="0 0 256 256">
+    <path fill="none" stroke-width="17" d="M95 164.8c6-12.5 13-26 21.2-41s17.5-29.8 28-44.6c10.3-14.8 18-24.6 22.6-29.5 4.8-4.8 8.8-8.7 12-11.5 3.4-2.8 9.2-5 17.6-6.2 8.4-1.3 14.7-2 19-2 3 0 5.3 1 7 2.6 2 1.8 2.8 4 2.8 7 0 2-.5 4-1.6 5.6-1 1.6-3.3 4-6.6 7-16 14.8-32.7 35.8-50 63-17.4 27.4-31.2 53.8-41.4 79.4-4.8 11.7-8 18.6-9.3 20.6-1.4 2-3.5 4-6.4 5.7-3 1.7-8.8 2.5-17.7 2.5-7 0-11.5-.4-13.4-1.3s-3.6-1.8-4.6-2.7c-1-1-4-5.2-9-12.7-5-8-12.6-17.2-22.3-28-5.5-6.2-8.3-11.4-8.3-15.5 0-6 3.2-11.3 9.6-15.8 6.4-4.5 12-6.7 17-6.7 5.3 0 11 2.2 17 6.5 6.3 4.4 11.8 10.2 16.7 17.5z" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-folder" viewBox="0 0 256 256">
+    <rect width="232" height="168" x="12" y="56" fill="#00675a" rx="12" ry="12"/>
+    <rect width="122" height="35" x="34" y="24" fill="#00675a" rx="24" ry="24"/>
+  </symbol>
+  <symbol id="icon-file" viewBox="0 0 256 256">
+    <path fill="#fff" d="M203.7 222.7h-153V30.3h96l57 47v145.4"/>
+    <path fill="#00675a" d="M47.6 240A13.3 13.3 0 0 1 34 226.4V29.6A13.3 13.3 0 0 1 47.6 16h110.8a7.3 7.3 0 0 1 2.8.6l1.4.6h.2l1.5 1 .4.2 1.3 1.2 51.8 51.8a14 14 0 0 1 4.4 10.3 7.2 7.2 0 0 1-.2 1.7v143a13.3 13.3 0 0 1-13.6 13.6zM194 212V96h-37.8A14.4 14.4 0 0 1 142 81.8V44H62v168z"/>
+  </symbol>
+  <symbol id="icon-help" viewBox="0 0 256 256">
+    <path d="M128 4a124 124 0 1 0 124 124A124 124 0 0 0 128 4zm3.6 206q-7.5 7.5-19.5 7.5-9.5 0-14.5-5t-5-14q0-12.8 7.5-20.5t19.7-7.7q9.5 0 14.4 5t5 14.2q0 12.8-7.3 20.4zM180 97.5a36.2 36.2 0 0 1-7 11 82.4 82.4 0 0 1-13.4 12q-8.4 6-21 14l-.7 1.3-.7 16.2-2.4 3.3-28.5 4.7-3.3-2-1.6-31.2 1.2-3.6 23-11q12.7-6.5 12.6-14.8t-9-12Q121 81 104 80l-2.8-4.2 13-28 4.3-2a112.3 112.3 0 0 1 25.7 3.6 74 74 0 0 1 20 8.6 42.8 42.8 0 0 1 13.2 12.5A27.8 27.8 0 0 1 182 86a33.2 33.2 0 0 1-2 11.6z"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 256 256">
+   <circle cx="128" cy="128" r="124" fill="#333"/>
+   <path fill="#fff" d="M99.8 188.6q12-.8 12-12.5V140q0-7.4-2-9.8t-8.1-2.4l-2.7.4-1.9.2 1.7-17.5q9.5-1.1 18.7-2.4l16.6-2.6 16.5-2.7 2.7 4.6q-5.1 9.5-5.1 73.4 0 3.6 1.2 5t4.1 1.4h1.5l1.7-.2 1.7-.2.6 1.1-2.5 17.9-10.6-.4-9.4-.3H128q-4.9 0-10.1.3l-9.9.7-10.6 1.1zm30.8-97.9q-9.7 0-14.8-5.2t-5.1-14.9q0-10.1 5.7-16t15.8-5.9q9.5 0 14.6 5.3t5.1 14.8q0 10.1-5.7 16t-15.6 5.9z"/>
+  </symbol>
+  <symbol id="icon-info-close" viewBox="0 0 256 256">
+   <circle cx="128" cy="128" r="124" fill="#333"/>
+   <path fill="#fff" d="M164.9 185.7l-10.4.2-14.1.5-17.9.5-1.2-1.2 2.2-17.1q7.6-.2 7.6-3.7a4.6 4.6 0 0 0-.4-1.8 25.1 25.1 0 0 0-1.6-2.8l-10.8-14.2q-3.4 4.4-6.9 9.2T108 163q0 5.4 7.1 5.4l1 2-2 16.4-12-.5-9.4-.4H78.2l-7.6.4-8.3.5-1-2.4 2.2-16.4q2.9-1.2 7.4-5.9T84 146.6l18.1-22L88 105.8Q82.4 98 76.8 95.2a50 50 0 0 0-12.6-4.3l-.7-1.2 1.7-19.6 8.3.2h37.1l11.6-.4 11.8-.7 1.2 2-1.7 18.1q-7.3 0-7.3 4.6a10.9 10.9 0 0 0 1.2 5.4 34.6 34.6 0 0 0 3.7 5.1l6.4 8.1 7.6-11 2.9-4.8a7.9 7.9 0 0 0 1.2-4 3 3 0 0 0-1.5-2.8q-1.5-.9-5.4-.9l-.5-1 1.5-17.6h34.9l7.7-.2 8.1-.5.7 1.5-1.2 19.1a148.9 148.9 0 0 0-12.5 8.4 41.9 41.9 0 0 0-9.1 9.5l-17.6 25.4L169 152a63 63 0 0 0 11.1 11.2 22.4 22.4 0 0 0 11.9 4.2l.7.7-2.7 18.1-10-.2h-15.1z"/>
+  </symbol>
+</svg>
+
+
+  
+
+
+
+
+
+
+<svg hidden>
+  <symbol id="icon-cheatsheet" viewBox="0 0 256 256">
+    <path d="M222 78.3c0-2.2-1-4.2-2.5-5.6l-56-56-.7-.6h-.2l-.8-.3c-.3 0-.6-.3-1-.4H41.4c-4 0-7.5 3-7.5 7v212c0 4 3.2 7 7.3 7h173c4 0 7.5-2.8 7.5-7v-156zm-56-38L196.4 71H166V40.2zM49 226V30h102v48.3c0 4 3.2 7.7 7.3 7.7H207v140H49z"/>
+  </symbol>
+  <symbol id="icon-checklist" viewBox="0 0 256 256">
+    <path d="M128 10.3C63 10.3 10.3 63 10.3 128S63 245.7 128 245.7 245.7 193 245.7 128 193 10.3 128 10.3zm0 215.6c-54 0-98-44-98-98s44-98 98-98 98 44 98 98-44 98-98 98z"/>
+    <path d="M103.8 158.2c4-8.6 9-18 14.7-28.3 5.7-11 12-21 19.2-31 7.3-10 12.3-17 15.7-20 3.3-4 6-6 8.3-8 2.3-2 6.3-4 12-5 6-1 10.3-1.7 13.2-1.7 2 0 3 .6 4 2 1 1 2 3 2 5 0 1.2-1 2.5-1 4-1 1-2 2.3-5 4.5-11 11-22 25-34 44s-21.8 37-28.8 55c-3.4 8-5.5 13-6.5 14-1 1.4-2.4 2.7-4.4 4s-6 1.7-12 1.7c-4.8 0-8-.7-9.3-1-1-1-2.2-1-3-2-.6-1-3-4-6-9-3.3-5.5-8.5-12-15-19-4-4.7-6-8-6-11 0-4 2-7.8 6-11 4.4-3 8.3-4.5 11.7-4.5 3.7 0 7.7 1.3 12 4.3 4.2 3 8 7 11.3 12z"/>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 256 256">
+    <path d="M128 4.5l37 74.7 82.4 12-59.7 58.2 14 82-73.7-38.7-73.8 38.8 14-82L8.7 91l82.5-12"/>
+  </symbol>
+  <symbol id="icon-tool" viewBox="0 0 256 256">
+    <path d="M206 122H50V13h126l.2 6.3c.5 17.6 7 24.5 23.8 25.2l6 .3V122zM63 109h130V56.7C176 54.2 166 44 163.8 26H63v83z"/>
+    <path d="M59 20h28v95H59zm55 95v120.7c0 4.2 3.2 7.3 7.4 7.3h14.8c4.2 0 7.8-3 7.8-7.3V115h-30z"/>
+  </symbol>
+</svg>
+
+<div class="masthead-wrap pad-t-1-2 pad-b-1-2">
+  <header class="masthead grid grid-middle wrapper gutter-1-2 pad-b-1-2" role="banner">
+    <div class="unit [ xs-1 m-1-4 ]">
+      <a class="logo link-box" href="/"><img class="img-flex" src="/images/logo.svg" alt="Learn the Web"></a>
+    </div>
+    
+      <nav class="top-nav unit [ xs-1 m-3-4 ] text-right" role="navigation">
+        <ul class="push-0 list-group-inline">
+          <li>
+            <a class="btn btn-ghost nav-current" href="/topics/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-nav" /></svg></i>
+              <span class="icon-label contents-link">Topics</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-ghost " href="/courses/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-courses" /></svg></i>
+              <span class="icon-label contents-link">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-ghost " href="/activities/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-activities" /></svg></i>
+              <span class="icon-label contents-link">Activities</span>
+            </a>
+          </li>
+          <li class="nav-home">
+            <a class="btn btn-ghost" href="/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-left" /></svg></i>
+              <span class="icon-label contents-link">Home</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+  </header>
+</div>
+
+
+<main class="relative" role="main" itemscope itemtype="http://schema.org/Article">
+  <div class="header push">
+    <div class="wrapper gutter-1-2 relative">
+      
+      
+        <a class="play-btn link-box link-box-no-mark" href="https://www.youtube.com/playlist?list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM" data-playlist="PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM">
+          <i class="icon play-icon"><svg><use xlink:href="#icon-play"/></svg></i>
+          <strong class="giga icon-label play-icon-text">Watch the video playlist</strong>
+        </a>
+      
+      
+        <dl class="video-stats-default push-0 text-right gutter-1-2">
+          <dt class="micro text-upper">Watched</dt>
+          <dd class="yotta bold"><span id="playlist-watched-initial">0</span><sup class="milli">%</sup></dd>
+        </dl>
+      
+      <div class="embed embed--4by1 video-embed"></div>
+    </div>
+    
+      <div class="section-lightest" id="watch-stats" hidden>
+        <div class="wrapper island-1-2">
+          <dl class="video-stats push-0 clearfix relative">
+            <dt class="micro text-upper">№ videos</dt>
+            <dd class="bold left push-0 pad-t-1-2">
+              <span class="yotta" id="playlist-items">0</span>
+            </dd>
+            <dt class="micro text-upper">Total time</dt>
+            <dd class="bold left push-0 pad-t-1-2">
+              <span class="yotta"><span id="playlist-time-hours">0</span><span class="mega">h</span></span>
+              <span class="yotta"><span id="playlist-time-minutes">0</span><span class="mega">m</span></span>
+              <span class="yotta"><span id="playlist-time-seconds">0</span><span class="mega">s</span></span>
+            </dd>
+            <dt class="micro text-right text-upper">Watched</dt>
+            <dd class="text-right bold right push-0 pad-t-1-2">
+              <span class="yotta" id="playlist-watched">0</span><sup class="video-stats-percent milli">%</sup>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="grid wrapper relative gutter-1-2">
+    <div class="unit [ xs-1 s-1 m-1 l-1-4 ] pad-t-1-2 push">
+      <ul class="downloads list-group grid push-1-2">
+        
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost" href="/topics/svg-cheat-sheet/">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-cheatsheet"/></svg></i>
+              <span class="icon-label">Get cheat sheet</span>
+            </a>
+          </li>
+        
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost btn-subtle" href="https://github.com/acgd-learn-the-web/advanced-svg-code/archive/master.zip">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-download"/></svg></i>
+              <span class="icon-label">Download code</span>
+            </a>
+          </li>
+        
+        
+          <li class="push-1-2 unit [ xs-1 s-1-2 l-1 ]">
+            <a class="btn btn-ghost btn-subtle" href="https://github.com/acgd-learn-the-web/advanced-svg-code">
+              <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-github"/></svg></i>
+              <span class="icon-label">Browse code</span>
+            </a>
+          </li>
+        
+      </ul>
+
+      <nav class="tutorial-nav" hidden>
+        <input type="checkbox" class="visually-hidden nav-check" id="nav-check">
+        <label class="nav-label giga" for="nav-check">
+          <i class="icon i-nav"></i>
+          <span class="icon-label">Contents</span>
+        </label>
+      </nav>
+    </div>
+
+    <article class="tutorial unit [ xs-1 s-1 m-1 l-3-4 ] pad-t-1-2">
+      <h1 class="yotta" id="start" itemprop="name" tabindex="0">Advanced SVG</h1>
+      <div itemprop="articleBody">
+        <p class="giga">Scalable vector graphics are amazing for creating graphics on the web because they can be embedded into HTML and treated like actual HTML elements.</p>
+
+<hr />
+
+<h2 id="svgs-are-code">SVGs are code</h2>
+
+<p>SVGs are purely vector graphics and they are written using the XML markup language.</p>
+
+<p>You don’t need a graphical editor to create an SVG, all you need is a text editor.</p>
+
+<h3 id="writing-svg">Writing SVG</h3>
+
+<p>To create SVG we can just make a new file in our text editor and give it the extension “.svg”.</p>
+
+<p>Inside the code file, write this:</p>
+
+<pre><code class="language-xml">&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;!-- Write all the SVG code in here --&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>It’s also good for browser compatibility to add these attributes: <code>width</code>, <code>height</code>, <code>viewBox</code>.</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;!-- Write all the SVG code in here --&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Then, inside our SVG we can create graphics.</p>
+
+<p>Here’s a <strong>rectangle</strong>:</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect x="10" y="10" width="75" height="50" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Add rounded corners with <code>rx</code> &amp; <code>ry</code>:</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;rect x="10" y="10" width="75" height="50" rx="8" ry="8" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Here’s a <strong>circle</strong>:</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;circle cx="175" cy="75" r="75" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<ul>
+  <li><code>cx</code> — centre x coordinate</li>
+  <li><code>cy</code> — centre y coordinate</li>
+  <li><code>r</code> — radius</li>
+</ul>
+
+<p>We can use CSS in our SVG, but the <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute">properties are just a little different</a>.</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;style&gt;
+    rect {
+      fill: #f33;
+    }
+  &lt;/style&gt;
+  &lt;rect x="10" y="10" width="75" height="50" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Use <code>fill</code> to change the shape’s colour.</p>
+
+<p>We can even use classes and IDs on elements.</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;style&gt;
+    .my-rect {
+      fill: #3f3;
+      stroke: #000;
+    }
+  &lt;/style&gt;
+  &lt;rect class="my-rect" x="10" y="10" width="75" height="50" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<h3 id="embedding-svg-into-html">Embedding SVG into HTML</h3>
+
+<p>SVG can be embedded directly into HTML, which gives us a bunch of extra control.</p>
+
+<pre><code class="language-html">⋮
+&lt;body&gt;
+  &lt;svg width="256" height="256" viewBox="0 0 256 256"&gt;
+    &lt;rect class="my-rect" x="10" y="10" width="75" height="50" /&gt;
+  &lt;/svg&gt;
+&lt;/body&gt;
+⋮
+</code></pre>
+
+<p><em>When embedding SVG inside HTML the <code>xmlns</code> and <code>version</code> attributes can be left off.</em></p>
+
+<p>As soon as the SVG is inside your HTML you can even move the CSS into your separate CSS file.</p>
+
+<p><em>In <code>main.css</code>:</em></p>
+
+<pre><code class="language-css">.my-rect {
+  fill: #f33;
+}
+</code></pre>
+
+<h4 id="svg-attributes-vs-css-properties">SVG attributes vs. CSS properties</h4>
+
+<p>There are a bunch of SVG attributes, like <code>fill</code> that can be written in the SVG as well as in CSS.</p>
+
+<p><em>When exporting from tools like Adobe Illustrator we should use the SVG presentation attributes to avoid naming collisions.</em></p>
+
+<p>For example, to change the <code>fill</code> of an element we could use the <code>fill=""</code> attribute like this:</p>
+
+<pre><code class="language-html">&lt;svg width="256" height="256" viewBox="0 0 256 256"&gt;
+  &lt;rect fill="#f33" x="10" y="10" width="75" height="50" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Or, we could use CSS, like shown above.</p>
+
+<p><strong>The important thing to remember is that if the SVG element has an attribute (like <code>fill=""</code>) and also the same CSS property (like <code>fill:</code>) then the CSS will always overwrite. The CSS property is more powerful than the SVG attribute.</strong></p>
+
+<h3 id="cleaning-generated-svg">Cleaning generated SVG</h3>
+
+<p>If you’re using SVG generated by a tool like Adobe Illustrator, Sketch, or Inkscape there’s lots of extra cruft that we don’t need in the files.</p>
+
+<p>We can use some optimization tools to clean up the SVG.</p>
+
+<p><em>Drop your SVGs into <a href="https://github.com/thomasjbradley/spritebot">Spritebot</a> that will optimize your SVG and remove the extra stuff.</em></p>
+
+<p><img src="spritebot.jpg" alt="" /></p>
+
+<h4 id="making-the-svg-code-pretty">Making the SVG code pretty</h4>
+
+<p>If you use Spritebot to clean the SVG code you can enabled the “Pretty Output” option that will nicely indent and format the SVG for use inside your HTML file.</p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="https://github.com/thomasjbradley/spritebot"><strong>Spritebot</strong></a></li>
+  <li><a href="http://svgpocketguide.com/"><strong>Pocket Guide to Writing SVG</strong></a></li>
+  <li><a href="http://www.w3.org/TR/SVG11/styling.html"><strong>W3: SVG 1.1 Styling</strong></a></li>
+  <li><a href="http://www.w3.org/TR/SVG/propidx.html"><strong>W3: SVG properties that can be used in CSS</strong></a></li>
+  <li><a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a></li>
+  <li><a href="http://www.vanseodesign.com/web-design/svg-shapes-lines/">SVG Basics—How To Create Simple Shapes And Lines</a></li>
+  <li><a href="http://www.vanseodesign.com/web-design/svg-fill-stroke/">SVG Basics—Fills And Strokes</a></li>
+  <li><a href="http://www.vanseodesign.com/web-design/svg-paths-line-commands/">SVG Basics—Creating Paths With Line Commands</a></li>
+  <li><a href="http://www.vanseodesign.com/web-design/svg-paths-curve-commands/">SVG Basics—Creating Paths With Curve Commands</a></li>
+  <li><a href="http://sarasoueidan.com/blog/svg-coordinate-systems/">Sara Soueidan: Understanding SVG Coordinate Systems and Transformations</a></li>
+  <li><a href="http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/">Sara Soueidan: Structuring, Grouping, and Referencing in SVG</a></li>
+  <li><a href="http://unmatchedstyle.com/news/svg-and-the-preserveaspectratio-property.php">SVG and the preserveAspectRatio Property</a></li>
+  <li><a href="https://github.com/davidderaedt/SVG-NOW">SVG NOW for Adobe Illustrator</a></li>
+  <li><a href="http://petercollingridge.appspot.com/svg-editor">SVG Editor</a></li>
+</ul>
+
+<hr />
+
+<h2 id="svg-effects">SVG effects</h2>
+
+<p>SVG can have lots of effects inside it: hovers, transitions, animations, filters, etc.</p>
+
+<p><em>As soon as we put our SVG into our HTML document we can apply all the effects in our CSS file.</em></p>
+
+<h3 id="adding-a-hover-state">Adding a hover state</h3>
+
+<p>Adding a hover state to an SVG graphic is no different than other HTML elements.</p>
+
+<pre><code class="language-xml">&lt;svg width="256" height="256" viewBox="0 0 256 256"&gt;
+  &lt;rect class="my-rect" x="10" y="10" width="75" height="50" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Then in CSS, we can do this:</p>
+
+<pre><code class="language-css">.my-rect {
+  fill: #f33;
+}
+
+.my-rect:hover {
+  fill: #000;
+}
+</code></pre>
+
+<h3 id="adding-transitions">Adding transitions</h3>
+
+<p>Adding CSS transitions to SVGs are no different than any other HTML element.</p>
+
+<pre><code class="language-css">.my-rect {
+  fill: #f33;
+  transition: all 250ms linear;
+}
+
+.my-rect:hover {
+  fill: #000;
+}
+</code></pre>
+
+<h3 id="adding-animations">Adding animations</h3>
+
+<p>There are SVG specific animations, named SMIL, but they are becoming deprecated. So CSS animations are a better way to go.</p>
+
+<p>Just treat your SVG elements just like any other HTML elements.</p>
+
+<pre><code class="language-css">.my-rect {
+  animation: rotate-box 250ms linear infinite;
+}
+
+@keyframes rotate-box {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+</code></pre>
+
+<p><em>Be careful with <code>transform</code> you may need to set <code>transform-origin</code> in pixels because it’s now inside the SVG document space.</em></p>
+
+<h3 id="masks">Masks</h3>
+
+<p>SVGs allow us to mask things. It works really well for creating transparent zones in JPGs or masking text.</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="500" viewBox="0 0 500 500"&gt;
+  &lt;defs&gt;
+    &lt;mask id="mask"&gt;
+      &lt;image width="500" height="500" xlink:href="images/mars-mask.png" /&gt;
+    &lt;/mask&gt;
+  &lt;/defs&gt;
+  &lt;image mask="url(#mask)" width="500" height="500" xlink:href="images/mars.jpg" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>The mask graphic must be black &amp; white: black being the areas that will be hidden and white the areas that will be shown.</p>
+
+<h3 id="filters">Filters</h3>
+
+<p>There are lots of effects that can be applied to SVG vector and bitmap graphics using SVG filters. Some filter examples are: drop shadows, gaussian blur, blend modes, colour transformations and more.</p>
+
+<p>Here’s a quick example of a blur on an SVG element:</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="500" viewBox="0 0 500 500"&gt;
+  &lt;filter id="blur"&gt;
+    &lt;feGaussianBlur in="SourceGraphic" stdDeviation="5" /&gt;
+  &lt;/filter&gt;
+  &lt;circle cx="170" cy="60" r="50" fill="green" filter="url(#blur)" /&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>You can also add filters to SVGs from Adobe Illustrator, make sure to use the SVG filters specifically.</p>
+
+<pre><code>Effect &gt; SVG Filters
+</code></pre>
+
+<h3 id="patterns">Patterns</h3>
+
+<p>Patterns can be defined in SVG using the <code>&lt;pattern&gt;</code> element. Patterns can be applied to anything that accepts a fill.</p>
+
+<p><a href="#adding-textures-to-text"><strong>☛ Check out the text pattern example</strong></a></p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="https://css-tricks.com/animating-svg-css/">CSS-Tricks: Animating SVG with CSS</a></li>
+  <li><a href="http://tutorials.jenkov.com/svg/mask.html">SVG Masks</a></li>
+  <li><a href="http://peterhrynkow.com/how-to-compress-a-png-like-a-jpeg/">Using SVG to shrink your PNGs</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter">MDN: SVG filters</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern">MDN: SVG patterns</a></li>
+</ul>
+
+<hr />
+
+<h2 id="svg-text">SVG text</h2>
+
+<p>Using text directly inside our SVG has lots of benefits: it can be textured, masked—<strong>and is fully accessible</strong>.</p>
+
+<p>Inside our SVG graphic we can add a <code>&lt;text&gt;</code> element, like this:</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;text x="0" y="180"&gt;Mars!&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>The <code>y</code> coordinate is the baseline of the text. The <code>x</code> coordinate is the left edge of the text, but if you add the attribute <code>text-anchor</code> then it can be the middle or the right.</p>
+
+<p>Here’s how to center text:</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;text x="50%" y="180" text-anchor="middle"&gt;Mars!&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<h3 id="web-fonts-for-text">Web fonts for text</h3>
+
+<p>SVG <code>&lt;text&gt;</code> that’s embedded directly into HTML can take advantage of web fonts.</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-ca"&gt;
+  &lt;head&gt;
+    ⋮
+    &lt;link href="http://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet"&gt;
+    ⋮
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;svg width="256" height="256" viewBox="0 0 256 256"&gt;
+      &lt;style&gt;
+        text {
+          font-family: "Denk One";
+        }
+      &lt;/style&gt;
+      &lt;text x="10" y="100"&gt;Dinosaurs!&lt;/text&gt;
+    &lt;/svg&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>With the web font linked we can set the <code>font-family</code> on the text element.</p>
+
+<h3 id="text-gradients">Text gradients</h3>
+
+<p>We can apply gradients into the text letters using SVG, like this:</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;style&gt;
+    text {
+      font-size: 5rem;
+      fill: url(#text-gradient);
+    }
+  &lt;/style&gt;
+  &lt;defs&gt;
+    &lt;linearGradient id="text-gradient"&gt;
+      &lt;stop offset="0%" stop-color="orange" /&gt;
+      &lt;stop offset="100%" stop-color="red" /&gt;
+    &lt;/linearGradient&gt;
+  &lt;/defs&gt;
+  &lt;text x="10" y="180"&gt;Mars!&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<h3 id="masking-text">Masking text</h3>
+
+<p>Using the <code>&lt;mask&gt;</code> element we can mask out pieces of text to create different effects:</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;style&gt;
+    text {
+      font-size: 120px;
+      font-weight: bold;
+    }
+  &lt;/style&gt;
+  &lt;defs&gt;
+    &lt;mask id="mask"&gt;
+      &lt;image width="500" height="200" xlink:href="images/text-mask.png" /&gt;
+    &lt;/mask&gt;
+  &lt;/defs&gt;
+  &lt;text x="0" y="180" mask="url(#mask)"&gt;Splatter!&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p><em>The mask image should be black and white: black areas becoming invisible, white areas visible.</em></p>
+
+<h3 id="adding-textures-to-text">Adding textures to text</h3>
+
+<p>We can also add textures to text using SVG and the <code>&lt;pattern&gt;</code> tag. Normally the pattern tag is for making patterns, but if you make the pattern big enough it will only show once.</p>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;style&gt;
+    text {
+      font-size: 200px;
+      font-weight: bold;
+      fill: url(#texture);
+    }
+  &lt;/style&gt;
+  &lt;defs&gt;
+    &lt;pattern width="500" patternUnits="userSpaceOnUse" height="200" id="texture"&gt;
+      &lt;image xlink:href="images/mars.jpg" width="800" height="500" /&gt;
+    &lt;/pattern&gt;
+  &lt;/defs&gt;
+  &lt;text x="0" y="180"&gt;Mars&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>In the above example the pattern isn’t really a pattern, but instead a large image texture I want to apply to the text.</p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="http://tympanus.net/codrops/2013/12/02/techniques-for-creating-textured-text/">Codrops: Techniques for Creating Textured Text</a></li>
+  <li><a href="http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/">Codrops: How to Create (Animated) Text Fills</a></li>
+</ul>
+
+<hr />
+
+<h2 id="svg-icons">SVG icons</h2>
+
+<p>SVGs are perfect for icons sets in our websites. We can even get their colour to inherit from other CSS colours.</p>
+
+<pre><code class="language-html">&lt;a class="icon-link" href="#"&gt;
+  &lt;svg class="icon"&gt;…&lt;/svg&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>If we remove all the <code>fill</code> attributes and CSS from the SVG we can control it with CSS.</p>
+
+<pre><code class="language-css">svg {
+  /* `currentColor` allows the color to inherit from the `color` attribute */
+  fill: currentColor;
+}
+
+.icon-link {
+  color: #33f;
+}
+
+.icon-link:hover {
+  color: #000;
+}
+</code></pre>
+
+<p>Doing the above CSS we can get our SVG colour to match the colour of the HTML element it’s inside.</p>
+
+<h3 id="svg-symbols--reuse">SVG symbols &amp; reuse</h3>
+
+<p>We can reuse SVG graphics multiple times on our website using the <code>&lt;symbol&gt;</code> element. These are just like symbols in Abobe Illustrator.</p>
+
+<p>At the top of our HTML file—the very top—we can define the SVG icons.</p>
+
+<pre><code class="language-html">⋮
+&lt;body&gt;
+  &lt;!-- Make sure to use `hidden` or `style="display: none"` to hide the icons until use --&gt;
+  &lt;svg hidden&gt;
+    &lt;symbol id="symbol-icon" viewBox="0 0 256 256"&gt;
+      &lt;path d="M188.5…" /&gt;
+    &lt;/symbol&gt;
+  &lt;/svg&gt;
+⋮
+</code></pre>
+
+<p>After the definition above, further down the HTML document we can use the SVG graphic.</p>
+
+<pre><code class="language-html">&lt;a class="icon-link" href="#"&gt;
+  &lt;!-- Use the ID above to link this symbol --&gt;
+  &lt;svg class="icon"&gt;&lt;use xlink:href="#symbol-icon"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>From a performance perspective this has caching issues because the SVG graphic must be included at the top of every HTML file.</p>
+
+<h3 id="svg-icon-sprite-sheets">SVG icon sprite sheets</h3>
+
+<p>Having to copy-and-paste the SVG code at the top of every SVG file can become cumbersome. It’s much easier to generate an SVG sprite sheet that contains all the icons symbols, save it in a separate file and refer to that file multiple times.</p>
+
+<p><a href="https://github.com/thomasjbradley/spritebot"><strong>Spritebot</strong></a> can be used to generate SVG sprite sheets by dropping multiple SVG files into the window and saving out the sprite sheet to a file.</p>
+
+<p><img src="sprite-sheet.jpg" alt="" /></p>
+
+<p>After you’ve saved the SVG file (I’d likely name it <code>icons.svg</code>) you can refer to each symbol with the <code>&lt;use&gt;</code> tag, but pointing to the file also.</p>
+
+<pre><code class="language-html">&lt;a class="icon-link" href="#"&gt;
+  &lt;!-- Notice the path to the icons.svg file --&gt;
+  &lt;!-- Spritebot will give each icon an ID equal the the filename (without the .svg part) --&gt;
+  &lt;svg class="icon"&gt;&lt;use xlink:href="images/icons.svg#nut"/&gt;&lt;/svg&gt;
+&lt;/a&gt;
+</code></pre>
+
+<h4 id="svg-icons-sprite-sheets-and-css">SVG icons sprite sheets and CSS</h4>
+
+<p>When using external SVG sprite sheets be careful about changing colours. If you want to be able to set the colour of the SVG graphics from within CSS, like we did above with <code>:hover</code>, then make sure there are no <code>fill=""</code> presentation attributes within the SVG file itself.</p>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="http://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/">24 Ways: An Overview of SVG Sprite Creation Techniques</a></li>
+</ul>
+
+<hr />
+
+<h2 id="embedded-svg-accessibility">Embedded SVG accessibility</h2>
+
+<p>If you’re not embedding the SVG directly into your HTML then the standard accessibility rules apply.</p>
+
+<p>If you are embedding the SVG into your website we want to be able to provide a text alternative, like the <code>&lt;img&gt;</code> tag’s <code>alt</code> attribute.</p>
+
+<p><em>If the purpose of your SVG is only the <code>&lt;text&gt;</code> inside it, like a fancy heading or something, then no need to go any further.</em></p>
+
+<h3 id="titles-and-descriptions">Titles and descriptions</h3>
+
+<p>Inside the SVG element, at the top, we can add two new elements to describe the contents of the image:</p>
+
+<ul>
+  <li><code>&lt;title&gt;</code> — A short description of the image contents.</li>
+  <li><code>&lt;desc&gt;</code> — A longer, in-depth explanation of the image contents.</li>
+</ul>
+
+<pre><code class="language-xml">&lt;svg width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;title&gt;Stegosaurus illustration&lt;/title&gt;
+  &lt;desc&gt;A cute illustration of a stegosaurus cuddling a t-rex toy.&lt;/desc&gt;
+
+  &lt;!-- Rest of SVG goes here --&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Neither of these elements will be visible on screen, but will be used by accessibility tools, like screen readers, and presented to users.</p>
+
+<h3 id="hiding-it-completely-with-aria">Hiding it completely with ARIA</h3>
+
+<p>If you are using the SVG <code>&lt;text&gt;</code> element inside your embedded SVG, but don’t want the text to be announced, because it’s purely decoration, add the <code>aria-hidden="true"</code> attribute to your SVG.</p>
+
+<pre><code class="language-xml">&lt;svg aria-hidden="true" width="500" height="200" viewBox="0 0 500 200"&gt;
+  &lt;text x="0" y="180"&gt;Splatter!&lt;/text&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p><strong>Links</strong></p>
+
+<ul>
+  <li><a href="http://demosthenes.info/blog/1026/Making-SVG-Accessible">Making SVG Accessible</a></li>
+</ul>
+
+<hr />
+
+<h2 id="video-list">Video list</h2>
+
+<ol>
+  <li><a href="https://www.youtube.com/watch?v=q_3Q9HHcXuA&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=1&amp;t=68s">Advanced SVG: writing SVG code</a></li>
+  <li><a href="https://www.youtube.com/watch?v=N4e2V6zVXA8&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=2">Advanced SVG: optimizing &amp; cleaning</a></li>
+  <li><a href="https://www.youtube.com/watch?v=EEtnu8OMD3o&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=3">Advanced SVG: attributes &amp; CSS</a></li>
+  <li><a href="https://www.youtube.com/watch?v=vwIVdI3WMIc&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=4">Advanced SVG: transitions</a></li>
+  <li><a href="https://www.youtube.com/watch?v=AcdOzdoB390&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=5">Advanced SVG: transform origin with pixels</a></li>
+  <li><a href="https://www.youtube.com/watch?v=8s70jpw5B5c&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=6">Advanced SVG: animations</a></li>
+  <li><a href="https://www.youtube.com/watch?v=y8NvpFfdprM&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=7">Advanced SVG: masking images</a></li>
+  <li><a href="https://www.youtube.com/watch?v=UKXRwuXd7rA&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=8">Advanced SVG: text &amp; web fonts</a></li>
+  <li><a href="https://www.youtube.com/watch?v=B5ol4ss-mi4&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=9">Advanced SVG: masking text</a></li>
+  <li><a href="https://www.youtube.com/watch?v=xgZkRVCS07Q&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=10">Advanced SVG: gradients on text</a></li>
+  <li><a href="https://www.youtube.com/watch?v=lSNnVbfvJJ0&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=11">Advanced SVG: textures on text</a></li>
+  <li><a href="https://www.youtube.com/watch?v=EhNHe-f0LBI&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=12">Advanced SVG: icons</a></li>
+  <li><a href="https://www.youtube.com/watch?v=BO13gECyiuE&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=13">Advanced SVG: icon symbols</a></li>
+  <li><a href="https://www.youtube.com/watch?v=NI-qGP5m-6M&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM&amp;index=14">Advanced SVG: icon sprite sheets</a></li>
+  <li><a href="https://www.youtube.com/watch?v=BieUh304KDA&amp;index=15&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM">Advanced SVG: accessibility</a></li>
+  <li><a href="https://www.youtube.com/watch?v=aVcs-zQ1q4U&amp;index=16&amp;list=PLWjCJDeWfDdeYtU0NMvYvfqqFA1Jsh3NM"><del>Advanced SVG: optimizing with SVGOMG</del></a></li>
+</ol>
+
+<h2 id="supplemental-links">Supplemental links</h2>
+
+<ul>
+  <li><a href="https://css-tricks.com/scale-svg/"><strong>CSS-Tricks: How to Scale SVG</strong></a></li>
+  <li><a href="https://css-tricks.com/mega-list-svg-information/"><strong>CSS-Tricks: A Compendium of SVG Information</strong></a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG"><strong>MDN: SVG</strong></a></li>
+  <li><a href="https://svgontheweb.com/">SVG on the web — A Practical Guide</a></li>
+  <li><a href="http://www.sitepoint.com/tips-accessible-svg/">Tips for Creating Accessible SVG</a></li>
+  <li><a href="http://www.vanseodesign.com/web-design/svg-viewport/">The SVG Canvas, Coordinate System, And Viewport</a></li>
+  <li><a href="http://w3.eleqtriq.com/2014/02/the-4-slice-scaling-technique-for-svg/">The 4 Slice Scaling Technique for SVG</a></li>
+  <li><a href="https://css-tricks.com/svg-fragment-identifiers-work/">CSS-Tricks: How SVG Fragment Identifiers Work</a></li>
+  <li><a href="http://www.smashingmagazine.com/2015/03/17/different-ways-to-use-svg-sprites-in-animation/">Smashing Magazine: A Few Different Ways To Use SVG Sprites In Animation</a></li>
+  <li><a href="http://www.smashingmagazine.com/2015/05/26/why-the-svg-filter-is-awesome/">Smashing Magazine: The Art Of The SVG Filter And Why It Is Awesome</a></li>
+  <li><a href="https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5">Masking SVG Animations</a></li>
+  <li><a href="http://slides.com/sarasoueidan/building-better-interfaces-with-svg/">Building Better Interfaces with SVG</a></li>
+  <li><a href="http://sarasoueidan.com/tools/circulus/">Circulus.SVG: The SVG Circular Menu Generator</a></li>
+  <li><a href="http://www.svidget.com/">svidget.js</a></li>
+  <li><a href="http://jakearchibald.com/2013/animated-line-drawing-svg/">Animated line drawing in SVG</a></li>
+  <li><a href="https://gigacore.github.io/demos/svg-stroke-dasharray-generator/">SVG Dashed Line Generator</a></li>
+  <li><a href="http://sarasoueidan.com/blog/svg-picture/">Better SVG Fallback and Art Direction With The <code>&lt;picture&gt;</code> Element</a></li>
+  <li><a href="https://css-tricks.com/how-to-make-charts-with-svg/">How to Make Charts with SVG</a></li>
+</ul>
+
+      </div>
+    </article>
+  </div>
+
+</main>
+
+<aside>
+  
+  
+  
+  
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+      
+
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+      
+    
+
+    
+
+  
+
+    
+
+    
+
+    
+
+      
+        
+        
+        
+
+  <div class="tutorial-footer wrapper gutter-1-2 pad-t pad-b">
+    <ul class="list-group controls push-0">
+      
+        
+        
+        
+        <li class="controls-prev push-1-4">
+          <a class="btn btn-ghost" href="/topics/css-animations-effects/" rel="prev">
+            <i class="icon i-24 i-shift-left"><svg><use xlink:href="#icon-left" /></svg></i>
+            <span class="icon-label">CSS animations & effects</span>
+          </a>
+        </li>
+      
+      <li class="controls-start push-1-4">
+        <a class="btn btn-ghost" href="/topics/#advanced-svg" rel="start">
+          <i class="icon i-24 push-r-1-4"><svg><use xlink:href="#icon-nav" /></svg></i>
+          <span class="icon-label">Topics</span>
+        </a>
+      </li>
+      
+        
+        
+        
+        <li class="controls-next push-1-4">
+          <a class="btn btn-ghost" href="/topics/svg-cheat-sheet/" rel="next">
+            <span class="icon-label">SVG cheat sheet</span>
+            <i class="icon i-24 i-shift-right"><svg><use xlink:href="#icon-right" /></svg></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</aside>
+
+
+
+  <div class="footer-wrap pad-t-1-2 pad-b-1-2">
+    <footer class="footer grid wrapper gutter-1-2" role="contentinfo">
+      <div class="unit [ xs-1 s-1 m-2-5 unit-push-m-3-5 l-2-5 ]">
+        <ul class="list-group footer-links micro">
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="/get-help/" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-help"/></svg></i>
+              <strong class="icon-label">Get help</strong>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="/solutions/" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-victory"/></svg></i>
+              <span class="icon-label">Solutions for teachers</span>
+            </a>
+          </li>
+          <li class="push-1-2">
+            <a class="icon-link link-box link-box-no-mark" href="/schedule/" rel="external">
+              <i class="icon i-16"><svg><use xlink:href="#icon-courses"/></svg></i>
+              <span class="icon-label">Term schedule</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-group-inline footer-links micro">
+          <li class="push-r-1-4">
+            <a class="icon-link link-box link-box-no-mark" href="https://github.com/acgd-learn-the-web" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-github"/></svg></i>
+              <span class="icon-label">GitHub</span>
+            </a>
+          </li>
+          <li class="push-r-1-4">
+            <a class="icon-link link-box link-box-no-mark" href="https://www.youtube.com/user/acinteractivedesign" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-play"/></svg></i>
+              <span class="icon-label">YouTube</span>
+            </a>
+          </li>
+          <li>
+            <a class="icon-link link-box link-box-no-mark" href="https://github.com/acgd-learn-the-web/topics/issues" rel="external">
+              <i class="icon i-18"><svg><use xlink:href="#icon-bug"/></svg></i>
+              <span class="icon-label">Feedback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="unit [ xs-1 s-1 m-3-5 unit-pull-m-2-5 l-3-5 ]">
+        <small class="copyright micro">© Algonquin College Graphic Design — <a href="http://algonquindesign.ca/">algonquindesign.ca</a>.</small>
+        <small class="copyright micro">All code for this website licensed under the <a href="https://github.com/acgd-learn-the-web/acgd-learn-the-web.github.io/blob/master/LICENSE" rel="license">MIT License</a>.</small>
+        <small class="copyright micro">All tutorial code licensed under the <a href="https://github.com/acgd-learn-the-web/topics/blob/master/UNLICENSE" rel="license">Unlicense</a>.</small>
+        <small class="copyright micro">All text, imagery, design, tutorials &amp; videos licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA License</a>.</small>
+        <small class="copyright micro push-1-4">Unless otherwise noted.</small>
+        <p class="copyright micro push-0 italic">Last build — <a href="https://github.com/acgd-learn-the-web/topics/commits/master" rel="external">2017-06-29 18:26 UTC</a>.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>var slug = 'advanced-svg';</script>
+  <script>(function(){'use strict';var f=[];function g(a){f.push(a);1===f.length&&l()}function m(){for(;f.length;)f[0](),f.shift()}if(window.MutationObserver){var n=document.createElement("div");(new MutationObserver(m)).observe(n,{attributes:!0});var l=function(){n.setAttribute("x",0)}}else l=function(){setTimeout(m)};function p(a){this.a=q;this.b=void 0;this.f=[];var b=this;try{a(function(a){r(b,a)},function(a){t(b,a)})}catch(c){t(b,c)}}var q=2;function u(a){return new p(function(b,c){c(a)})}function v(a){return new p(function(b){b(a)})}
+function r(a,b){if(a.a===q){if(b===a)throw new TypeError("Promise settled with itself.");var c=!1;try{var d=b&&b.then;if(null!==b&&"object"===typeof b&&"function"===typeof d){d.call(b,function(b){c||r(a,b);c=!0},function(b){c||t(a,b);c=!0});return}}catch(e){c||t(a,e);return}a.a=0;a.b=b;w(a)}}function t(a,b){if(a.a===q){if(b===a)throw new TypeError("Promise settled with itself.");a.a=1;a.b=b;w(a)}}
+function w(a){g(function(){if(a.a!==q)for(;a.f.length;){var b=a.f.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0===a.a?"function"===typeof c?e(c.call(void 0,a.b)):e(a.b):1===a.a&&("function"===typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(h){b(h)}}})}p.prototype.g=function(a){return this.c(void 0,a)};p.prototype.c=function(a,b){var c=this;return new p(function(d,e){c.f.push([a,b,d,e]);w(c)})};
+function x(a){return new p(function(b,c){function d(c){return function(d){h[c]=d;e+=1;e===a.length&&b(h)}}var e=0,h=[];0===a.length&&b(h);for(var k=0;k<a.length;k+=1)v(a[k]).c(d(k),c)})}function y(a){return new p(function(b,c){for(var d=0;d<a.length;d+=1)v(a[d]).c(b,c)})};window.Promise||(window.Promise=p,window.Promise.resolve=v,window.Promise.reject=u,window.Promise.race=y,window.Promise.all=x,window.Promise.prototype.then=p.prototype.c,window.Promise.prototype["catch"]=p.prototype.g);}());
+
+(function(){'use strict';function h(a){document.body?a():document.addEventListener("DOMContentLoaded",a)};function v(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.h=document.createElement("span");this.g=document.createElement("span");this.f=-1;this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";
+this.g.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;";this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;";this.b.appendChild(this.h);this.c.appendChild(this.g);this.a.appendChild(this.b);this.a.appendChild(this.c)}
+function w(a,c,b){a.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font-size:100px;font-family:"+c+";"+b}function x(a){var c=a.a.offsetWidth,b=c+100;a.g.style.width=b+"px";a.c.scrollLeft=b;a.b.scrollLeft=a.b.scrollWidth+100;return a.f!==c?(a.f=c,!0):!1}
+function y(a,c){a.b.addEventListener("scroll",function(){x(a)&&null!==a.a.parentNode&&c(a.f)},!1);a.c.addEventListener("scroll",function(){x(a)&&null!==a.a.parentNode&&c(a.f)},!1);x(a)};function z(a,c){var b=c||{};this.family=a;this.style=b.style||"normal";this.variant=b.variant||"normal";this.weight=b.weight||"normal";this.stretch=b.stretch||"stretch";this.featureSettings=b.featureSettings||"normal"}var B=null;
+z.prototype.a=function(a,c){var b=a||"BESbswy",C=c||3E3,k="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",g=document.createElement("div"),l=new v(b),m=new v(b),n=new v(b),d=-1,e=-1,f=-1,q=-1,r=-1,t=-1,p=this;return new Promise(function(a,b){function c(){null!==g.parentNode&&g.parentNode.removeChild(g)}
+function u(){if(-1!==d&&-1!==e||-1!==d&&-1!==f||-1!==e&&-1!==f)if(d===e||d===f||e===f){if(null===B){var b=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);B=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))}B?d===q&&e===q&&f===q||d===r&&e===r&&f===r||d===t&&e===t&&f===t||(c(),a(p)):(c(),a(p))}}h(function(){function a(){if(Date.now()-D>=C)c(),b(p);else{var A=document.hidden;if(!0===A||void 0===A)d=l.a.offsetWidth,e=m.a.offsetWidth,f=n.a.offsetWidth,
+u();setTimeout(a,50)}}var D=Date.now();w(l,"sans-serif",k);w(m,"serif",k);w(n,"monospace",k);g.appendChild(l.a);g.appendChild(m.a);g.appendChild(n.a);document.body.appendChild(g);q=l.a.offsetWidth;r=m.a.offsetWidth;t=n.a.offsetWidth;a();y(l,function(a){d=a;u()});w(l,'"'+p.family+'",sans-serif',k);y(m,function(a){e=a;u()});w(m,'"'+p.family+'",serif',k);y(n,function(a){f=a;u()});w(n,'"'+p.family+'",monospace',k)})})};window.FontFaceObserver=z;window.FontFaceObserver.prototype.check=z.prototype.a;}());
+</script>
+  <script>var alegreyaNormal,alegreyaItalic,alegreyaBold;sessionStorage.alegreyaLoaded?document.documentElement.className+=" alegreya-loaded":(alegreyaNormal=new FontFaceObserver("Alegreya Sans",{weight:"normal"}),alegreyaItalic=new FontFaceObserver("Alegreya Sans",{style:"italic"}),alegreyaBold=new FontFaceObserver("Alegreya Sans",{weight:"bold"}),Promise.all([alegreyaNormal.check(),alegreyaItalic.check(),alegreyaBold.check()]).then(function(){document.documentElement.className+=" alegreya-loaded",sessionStorage.alegreyaLoaded=!0}));</script>
+  <script src="/js/common.min.js?v=92" async></script>
+  
+    <script src="/js/article.min.js?v=92" defer></script>
+    <script>var sourceCodeProNormal,sourceCodeProBold;sessionStorage.sourceCodeProLoaded?document.documentElement.className+=" source-code-pro-loaded":(sourceCodeProNormal=new FontFaceObserver("Source Code Pro",{weight:"normal"}),sourceCodeProBold=new FontFaceObserver("Source Code Pro",{weight:"bold"}),Promise.all([sourceCodeProNormal.check(),sourceCodeProBold.check()]).then(function(){document.documentElement.className+=" source-code-pro-loaded",sessionStorage.sourceCodeProLoaded=!0}));</script>
+    <script>
+      var path = window.location.pathname.replace('/topics/', '').replace('/', '');
+      localStorage.setItem('visited-' + path, true);
+    </script>
+  
+</body>
+</html>

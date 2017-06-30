@@ -1,0 +1,967 @@
+
+
+
+
+
+[
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "HTML writer",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-01/#html-writer\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-01/#html-writer</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["html-writer"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Responsive image section",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-01/#responsive-image-section\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-01/#responsive-image-section</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["responsive-image-section"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Making responsive grids",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/making-responsive-grids/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/making-responsive-grids/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["making-responsive-grids"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Using Gridifier",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/using-gridifier/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/using-gridifier/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["using-gridifier"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Grid layout",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-02/#grid-layout\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-02/#grid-layout</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["grid-layout"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Fraction Fragmenter",
+  "description": "<h2><a href=\"http://localhost:5000/fraction-fragmenter/\">http://localhost:5000/fraction-fragmenter/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["fraction-fragmenter"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Grid-ception",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-03/#grid-ception\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-03/#grid-ception</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["grid-ception"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Using a type system",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/using-a-type-system/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/using-a-type-system/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["using-a-type-system"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Section",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-04/#section\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-04/#section</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["section"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Banner",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-04/#banner\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-04/#banner</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["banner"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Type Trasher",
+  "description": "<h2><a href=\"http://localhost:5000/type-trasher/\">http://localhost:5000/type-trasher/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["type-trasher"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Content page",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-05/#content-page\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-05/#content-page</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["content-page"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Grid Genius",
+  "description": "<h2><a href=\"http://localhost:5000/grid-genius/\">http://localhost:5000/grid-genius/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["grid-genius"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Modular nav",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-06/#modular-nav\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-06/#modular-nav</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["modular-nav"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Lists ’n’ grids",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-06/#lists-n-grids\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-06/#lists-n-grids</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["lists-n-grids"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Button systems",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/button-systems/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/button-systems/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["button-systems"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Icons",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-07/#icons\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-07/#icons</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["icons"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "List groups",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-07/#list-groups\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-07/#list-groups</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["list-groups"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Responsive photo gallery",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-08/#responsive-photo-gallery\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-08/#responsive-photo-gallery</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["responsive-photo-gallery"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Icon navigation",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-08/#icon-navigation\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-08/#icon-navigation</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["icon-navigation"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Contact form",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/contact-form/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/contact-form/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["contact-form"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Registration form",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-09/#registration-form\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-09/#registration-form</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["registration-form"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Form Finalizer",
+  "description": "<h2><a href=\"http://localhost:5000/form-finalizer/\">http://localhost:5000/form-finalizer/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["form-finalizer"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Volunteer form",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-10/#volunteer-form\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-10/#volunteer-form</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["volunteer-form"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Data table",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/data-table/\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/data-table/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["data-table"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Events calendar",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-11/#events-calendar\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-11/#events-calendar</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["events-calendar"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Table Tabulator",
+  "description": "<h2><a href=\"http://localhost:5000/table-tabulator/\">http://localhost:5000/table-tabulator/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["table-tabulator"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "SaaS website sketches",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-12/#saas-website-sketches\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-12/#saas-website-sketches</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["saas-website-sketches"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+        
+        
+        
+        
+        
+        
+        
+
+
+
+{
+  "name": "SaaS website",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-12/#saas-website\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-12/#saas-website</a></h2>",
+  "assignment_group_id": "project",
+  "grading_type": "letter_grade",
+  "points_possible": 100,
+  "submission_types": "none",
+  "allowed_extensions": ["saas-website"],
+  "published": true,
+  "muted": true
+},
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Module Mogul",
+  "description": "<h2><a href=\"http://localhost:5000/module-mogul/\">http://localhost:5000/module-mogul/</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["module-mogul"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "SaaS website check-in",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-13/#saas-website-check-in\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2/week-13/#saas-website-check-in</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["saas-website-check-in"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+
+
+
+{
+  "name": "Browser testing",
+  "description": "<h2><a href=\"https://learn-the-web.algonquindesign.ca/courses/web-dev-2//courses/web-dev-1/browser-testing//\">https://learn-the-web.algonquindesign.ca/courses/web-dev-2//courses/web-dev-1/browser-testing//</a></h2>",
+  "assignment_group_id": "exercises",
+  "grading_type": "pass_fail",
+  "points_possible": 1,
+  "submission_types": "none",
+  "allowed_extensions": ["/courses/web-dev-1/browser-testing/"],
+  "published": true,
+  "muted": true
+},
+
+    
+  
+    
+      
+      
+    
+      
+    
+  
+    
+      
+      
+
+]

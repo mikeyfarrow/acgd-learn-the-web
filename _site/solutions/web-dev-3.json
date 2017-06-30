@@ -1,0 +1,531 @@
+
+[
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+      
+      
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-02/",
+  "title": "Semantics schemantics",
+  "slug": "semantics-schemantics"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-02/",
+  "title": "HTML writer",
+  "slug": "html-writer"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-02/",
+  "title": "Responsive image section",
+  "slug": "responsive-image-section"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-03/",
+  "title": "Finding grids",
+  "slug": "finding-grids"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-03/",
+  "title": "Grid layout",
+  "slug": "grid-layout"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-03/",
+  "title": "Grid-ception",
+  "slug": "grid-ception"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-04/",
+  "title": "Section",
+  "slug": "section"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-04/",
+  "title": "Banner",
+  "slug": "banner"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-04/",
+  "title": "Content page",
+  "slug": "content-page"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-05/",
+  "title": "Sketching websites",
+  "slug": "sketching-websites"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-05/",
+  "title": "Refined grid-ception",
+  "slug": "refined-grid-ception"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-05/",
+  "title": "Modular nav",
+  "slug": "modular-nav"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-05/",
+  "title": "Lists ’n’ grids",
+  "slug": "lists-n-grids"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-06/",
+  "title": "Embed containers",
+  "slug": "embed-containers"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-06/",
+  "title": "Icons",
+  "slug": "icons"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-06/",
+  "title": "List groups",
+  "slug": "list-groups"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-07/",
+  "title": "Finding patterns",
+  "slug": "finding-patterns"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-07/",
+  "title": "Responsive photo gallery",
+  "slug": "responsive-photo-gallery"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-07/",
+  "title": "Icon navigation",
+  "slug": "icon-navigation"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-07/",
+  "title": "Icon cards",
+  "slug": "icon-cards"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-08/",
+  "title": "Events calendar",
+  "slug": "events-calendar"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-08/",
+  "title": "Registration form",
+  "slug": "registration-form"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-10/",
+  "title": "Image formats",
+  "slug": "image-formats"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-10/",
+  "title": "Production prepping & compression",
+  "slug": "production-prepping-compression"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-11/",
+  "title": "Leafy decorations",
+  "slug": "leafy-decorations"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-11/",
+  "title": "Retina gallery",
+  "slug": "retina-gallery"
+},
+
+    
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-12/",
+  "title": "Fastness fixer",
+  "slug": "fastness-fixer"
+},
+
+    
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-12/",
+  "title": "This site ain’t no sloth",
+  "slug": "this-site-aint-no-sloth"
+},
+
+    
+  
+    
+    
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-13/",
+  "title": "Using VoiceOver",
+  "slug": "using-voiceover"
+},
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      {
+  "week": "/courses/web-dev-3/week-13/",
+  "title": "Accessibility fixer-upper",
+  "slug": "accessibility-fixer-upper"
+},
+
+    
+      
+  
+    
+    
+      
+      
+    
+      
+      
+      
+      
+      
+      
+      
+      
+  
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+]
